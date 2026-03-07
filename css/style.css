@@ -4502,7 +4502,7 @@ body:has(.preloader) {
   pointer-events: all;
 }
 .modal__backdrop {
-  position: absolute;
+  position: fixed;
   inset: 0;
   background-color: var(--color-black-50);
   transition: opacity var(--modal-transition-time), visibility var(--modal-transition-time);
@@ -5322,6 +5322,10 @@ button.btn {
 .checkbox input[type=checkbox]:not(:disabled) ~ .checkbox__text {
   cursor: pointer;
 }
+.checkbox input[type=checkbox]:checked ~ .checkbox__mark {
+  border-color: var(--color-blue-deep-cerulean);
+  background-color: var(--color-blue-deep-cerulean);
+}
 .checkbox input[type=checkbox]:checked ~ .checkbox__mark::after {
   opacity: 1;
   visibility: visible;
@@ -5337,14 +5341,14 @@ button.btn {
   height: var(--control-mark-size);
   min-width: var(--control-mark-size);
   background-color: var(--color-gray-grams-hair);
-  transition: border-color var(--transition-duration);
+  transition: border-color var(--transition-duration), background-color var(--transition-duration);
 }
 .checkbox__mark::after {
   content: "";
   position: absolute;
   left: calc(var(--control-mark-size) * 0.31);
   top: calc(var(--control-mark-size) * 0.05);
-  border: solid var(--color-black);
+  border: solid var(--color-white);
   border-width: 0 calc(var(--control-mark-size) * 0.083) calc(var(--control-mark-size) * 0.083) 0;
   width: calc(var(--control-mark-size) * 0.33);
   height: calc(var(--control-mark-size) * 0.625);
