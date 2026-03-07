@@ -1,0 +1,609 @@
+<!doctype html>
+<html lang="uk">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+		<link rel="shortcut icon" href="./assets/favicon/favicon.ico">
+		<meta name="keywords" content="ActiveLex Dashboard">
+		<meta name="description" content="ActiveLex Admin Dashboard">
+		<title>Dashboard | ActiveLex</title>
+		<script type="module" crossorigin="" src="./js/vendor.min.js?v=1772881746717"></script>
+		<script type="module" crossorigin="" src="./js/app.min.js?v=1772881746717"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/style.min.css?v=1772881746717">
+	</head>
+	<body class="body-admin">
+		<div class="wrapper">
+			<div class="admin-layout">
+				<div class="admin-layout__row">
+					<aside class="admin-layout__aside">
+						<aside class="admin-sidebar" aria-label="Навігація кабінету" data-sidebar="">
+							<div class="admin-sidebar__header">
+								<a href="/" class="admin-sidebar__logo">
+									<img src="./assets/img/logo-colored.svg" alt="ActiveLex" width="159" height="36" data-img-ignore="" data-sidebar-logo="default">
+									<img src="./assets/img/logo-xs.svg" alt="ActiveLex" width="30" height="36" data-img-ignore="" data-sidebar-logo="collapsed">
+								</a>
+								<button type="button" aria-label="Collapse Sidebar" class="admin-sidebar__toggle admin-sidebar__toggle--collapse" data-sidebar-toggle="">
+									<i class="icon-sidebar-left" aria-hidden="true"></i>
+								</button>
+							</div>
+							<div class="admin-sidebar__subheader">
+								<button type="button" aria-label="Expand Sidebar" class="admin-sidebar__toggle admin-sidebar__toggle--expand" data-sidebar-toggle="">
+									<i class="icon-sidebar-right" aria-hidden="true"></i>
+								</button>
+							</div>
+							<div class="admin-sidebar__body">
+								<ul class="admin-sidebar__menu" data-sidebar-menu="">
+									<li>
+										<a href="#" class="_active">
+											<i class="icon-settings-category" aria-hidden="true"></i>
+											<span data-sidebar-menu-label="">Продукти</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="icon-credit-card" aria-hidden="true"></i>
+											<span data-sidebar-menu-label="">Підписки та покупки</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="icon-empty-wallet" aria-hidden="true"></i>
+											<span data-sidebar-menu-label="">Платежі</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="icon-settings" aria-hidden="true"></i>
+											<span data-sidebar-menu-label="">Налаштування</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="admin-sidebar__footer">
+								<ul class="admin-sidebar__menu" data-sidebar-menu="">
+									<li>
+										<a href="#">
+											<i class="icon-headphones" aria-hidden="true"></i>
+											<span data-sidebar-menu-label="">Підтримка</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</aside>
+					</aside>
+					<div class="admin-layout__main">
+						<header class="admin-header">
+							<div class="admin-header__container">
+								<div class="admin-header__wrap">
+									<div class="admin-header__row">
+										<h2 class="admin-header__title">Вітаємо у кабінеті</h2>
+										<a href="/" class="admin-header__logo">
+											<img src="./assets/img/logo-colored.svg" alt="ActiveLex, to homepage" width="140" height="32" fetchpriority="high">
+										</a>
+										<div class="admin-header__btn-box">
+											<div class="admin-header__support admin-header-notif">
+												<button type="button" class="admin-header-notif__btn" aria-label="Support">
+													<i class="icon-headphones" aria-hidden="true"></i>
+												</button>
+											</div>
+											<div class="admin-header__notif admin-header-notif">
+												<button type="button" class="admin-header-notif__btn _new" aria-label="Notifications" data-popup-trigger="adminHeaderNotif">
+													<i class="icon-bell" aria-hidden="true"></i>
+												</button>
+												<div class="admin-header-notif__popup" data-popup="adminHeaderNotif">
+													<div class="admin-header-notif__backdrop" data-popup-close=""></div>
+													<div class="admin-header-notif__content notif-content">
+														<button type="button" class="notif-content__close-btn" aria-label="Close Modal" data-popup-close="">
+															<i class="icon-x" aria-hidden="true"></i>
+														</button>
+														<div class="notif-content__header">
+															<h3 class="notif-content__title">Сповіщення</h3>
+															<button type="button" class="notif-content__back-btn" aria-label="Close Modal" data-popup-close="">
+																<i class="icon-chevron-left" aria-hidden="true"></i>
+															</button>
+														</div>
+														<div class="notif-content__body">
+															<div class="notif-content__scroll-container">
+																<ul class="notif-content__list">
+																	<li>
+																		<article class="notif-item" data-state="new">
+																			<div class="notif-item__header">
+																				<h3 class="notif-item__title">
+																					<span>Підписка завершується</span>
+																				</h3>
+																				<time datetime="#" class="notif-item__date">01.01.2026</time>
+																			</div>
+																			<div class="notif-item__body">
+																				<div class="notif-item__desc-text">
+																					<p>
+																						Термін дії LEX.Юрист спливає через 3 дні. Щоб не втратити доступ, оформіть продовження.
+																					</p>
+																				</div>
+																			</div>
+																		</article>
+																	</li>
+																	<li>
+																		<article class="notif-item" data-state="">
+																			<div class="notif-item__header">
+																				<h3 class="notif-item__title">
+																					<span>Автоподовження вимкнено</span>
+																				</h3>
+																				<time datetime="#" class="notif-item__date">30.11.2025</time>
+																			</div>
+																			<div class="notif-item__body">
+																				<div class="notif-item__desc-text">
+																					<p>
+																						Автоматичне продовження підписки LEX.Нотаріус вимкнено. Доступ діятиме до 06.12.2025.
+																					</p>
+																				</div>
+																			</div>
+																		</article>
+																	</li>
+																	<li>
+																		<article class="notif-item" data-state="danger">
+																			<div class="notif-item__header">
+																				<h3 class="notif-item__title">
+																					<span>Оплата не пройшла</span>
+																				</h3>
+																				<time datetime="#" class="notif-item__date">08.05.2025</time>
+																			</div>
+																			<div class="notif-item__body">
+																				<div class="notif-item__desc-text">
+																					<p>
+																						Не вдалося списати кошти з картки Visa •••• 2378. Перевірте баланс або додайте інший метод оплати.
+																					</p>
+																				</div>
+																			</div>
+																			<div class="notif-item__footer">
+																				<a href="/" class="notif-item__link">
+																					<span>Спробувати знову</span>
+																					<i class="icon-chevron-right" aria-hidden="true"></i>
+																				</a>
+																			</div>
+																		</article>
+																	</li>
+																	<li>
+																		<article class="notif-item" data-state="success">
+																			<div class="notif-item__header">
+																				<h3 class="notif-item__title">
+																					<span>Оплату успішно зараховано</span>
+																				</h3>
+																				<time datetime="#" class="notif-item__date">15.04.2025</time>
+																			</div>
+																			<div class="notif-item__body">
+																				<div class="notif-item__desc-text">
+																					<p>
+																						Оплата за продукт LEX.Адвокат (1 200 ₴) успішно проведена. Підписку продовжено до 12.11.2025.
+																					</p>
+																				</div>
+																			</div>
+																		</article>
+																	</li>
+																	<li>
+																		<article class="notif-item" data-state="">
+																			<div class="notif-item__header">
+																				<h3 class="notif-item__title">
+																					<span>Вхід із нового пристрою</span>
+																				</h3>
+																				<time datetime="#" class="notif-item__date">17.02.2025</time>
+																			</div>
+																			<div class="notif-item__body">
+																				<div class="notif-item__desc-text">
+																					<p>
+																						Здійснено вхід у ваш акаунт з Chrome (Windows), IP 176.36.14.9. Якщо це не ви — негайно змініть пароль.
+																					</p>
+																				</div>
+																			</div>
+																		</article>
+																	</li>
+																</ul>
+															</div>
+														</div>
+														<div class="notif-content__footer"></div>
+													</div>
+												</div>
+											</div>
+											<div class="admin-header__user-quick admin-user-quick">
+												<div class="admin-user-quick__header">
+													<div class="admin-user-quick__avatar" aria-hidden="true">B</div>
+													<div class="admin-user-quick__name">Володимир Мельник</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</header>
+						<div class="admin-layout__content">
+							<!-- Section 01: Main (done) -->
+							<section class="admin-section" aria-labelledby="sectionCardTitle">
+								<div class="admin-section__container">
+									<div class="admin-section__wrap">
+										<div class="admin-section__header">
+											<a href="/" class="admin-section__back-link">
+												<i class="icon-chevron-left" aria-hidden="true"></i>
+												<span>Назад до продуктів</span>
+											</a>
+										</div>
+										<div class="admin-section__body">
+											<article class="admin-hero-card">
+												<div class="admin-hero-card__row">
+													<div class="admin-hero-card__col admin-hero-card__col--text">
+														<div class="admin-hero-card__text">
+															<h2 class="admin-hero-card__title">LEX.Військовий юрист</h2>
+															<div class="admin-hero-card__desc-text desc-text">
+																<p>
+																	Започаткований спільно з Міністерством оборони України новий
+                    інформаційний комплекс в системі LEX містить накази,
+                    інструкції, положення й інші документи щодо військової
+                    служби.
+																</p>
+																<p>
+																	Головним призначенням інформаційного комплексу є надання
+                    українським військовим юристам і широкому загалу правників
+                    доступу до актів Міністерства оборони, Генштабу, окремих
+                    служб і військових формувань задля успішної практики у
+                    військовому і інших галузях права.
+																</p>
+															</div>
+														</div>
+													</div>
+													<div class="admin-hero-card__col admin-hero-card__col--media">
+														<div class="admin-hero-card__media store-hero-media">
+															<figure class="store-hero-media__img">
+																<picture>
+																	<source media="(max-width: 768px)" srcset="./assets/img/store-inner/hero/01-768.webp" type="image/webp">
+																	<source media="(max-width: 1280px)" srcset="./assets/img/store-inner/hero/01-1280.webp" type="image/webp">
+																	<img alt="" width="750" height="550" fetchpriority="high" src="./assets/img/store-inner/hero/01.webp">
+																</picture>
+																<ul class="store-hero-media__tags">
+																	<li>
+																		<i class="icon-timer" aria-hidden="true"></i>
+																		<span>24:15:09</span>
+																	</li>
+																	<li>
+																		<span>Вигода: –1600 грн</span>
+																	</li>
+																</ul>
+															</figure>
+															<ul class="store-hero-media__types">
+																<li>
+																	<figure>
+																		<img src="./assets/img/store-inner/hero/items/01.svg" alt="" width="34" height="34">
+																	</figure>
+																	<span>Перевірка контрагентів</span>
+																</li>
+																<li>
+																	<figure>
+																		<img src="./assets/img/store-inner/hero/items/01.svg" alt="" width="34" height="34">
+																	</figure>
+																	<span>Перевірка контрагентів</span>
+																</li>
+																<li>
+																	<figure>
+																		<img src="./assets/img/store-inner/hero/items/03.svg" alt="" width="34" height="34">
+																	</figure>
+																	<span>Судова практика</span>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</article>
+										</div>
+									</div>
+								</div>
+							</section>
+							<!-- Section 02: Tariffs (done) -->
+							<section class="admin-section" aria-labelledby="sectionTariffsTitle">
+								<div class="admin-section__container">
+									<div class="admin-section__wrap">
+										<div class="admin-section__header">
+											<h2 class="admin-section__title h5" id="sectionTariffsTitle">Підписка та тарифи</h2>
+										</div>
+										<div class="admin-section__body">
+											<ul class="admin-section__tariff-cards">
+												<li>
+													<article class="tariff-card tariff-card--blue" data-size="sm">
+														<h4 class="tariff-card__title h4">Оформлення підписки</h4>
+														<div class="tariff-card__desc-text desc-text">
+															<p>
+																Підпишіться, щоб отримати повний доступ до всіх можливостей продукту. Обирайте термін та кількість ліцензій і користуйтесь сервісом
+															</p>
+														</div>
+														<form class="tariff-card__form tariff-card-form" action="#" method="post">
+															<div class="tariff-card-form__groups">
+																<div class="tariff-card-form__group">
+																	<label for="tariffPeriod" class="tariff-card-form__label">Кількість</label>
+																	<label class="tariff-card__select select select--white">
+																		<select id="tariffPeriod" name="period" data-select="">
+																			<option value="1m">1 місяць</option>
+																			<option value="3m">3 місяці</option>
+																			<option value="6m">6 місяців</option>
+																			<option value="12m">12 місяців</option>
+																		</select>
+																	</label>
+																</div>
+																<div class="tariff-card-form__group">
+																	<label class="tariff-card-form__label">Кількість ліцензій</label>
+																	<div class="tariff-card-form__input-quantity input-quantity" data-input-qty="">
+																		<button type="button" class="input-quantity__btn" data-input-qty-down="">-</button>
+																		<input type="text" value="1" name="tariffQuantity" class="input-quantity__input" data-input-qty-value="">
+																		<button type="button" class="input-quantity__btn" data-input-qty-up="">+</button>
+																	</div>
+																</div>
+															</div>
+															<div class="tariff-card-form__price">
+																<span>Вартість:</span>
+																<h5>360 грн.</h5>
+															</div>
+															<div class="tariff-card-form__actions">
+																<button type="submit" class="tariff-card__btn btn" data-variant="primary">
+																	<span>Оформити підписку</span>
+																</button>
+																<a href="#" class="tariff-card__btn btn" data-variant="white">
+																	<span>Замовити рахунок</span>
+																</a>
+															</div>
+														</form>
+													</article>
+												</li>
+												<li>
+													<article class="tariff-card tariff-card--green" data-size="sm">
+														<h4 class="tariff-card__title h4">Тарифи</h4>
+														<div class="tariff-card__desc-text desc-text">
+															<p>
+																Підпишіться, щоб отримати повний доступ до всіх можливостей продукту. Обирайте термін та кількість ліцензій і користуйтесь сервісом
+															</p>
+														</div>
+														<div class="tariff-card__form tariff-card-form">
+															<div class="tariff-card-form__groups">
+																<div class="tariff-card-form__group">
+																	<label for="tariffLicenses" class="tariff-card-form__label">Кількість ліцензій</label>
+																	<label class="tariff-card__field select select--white">
+																		<select id="tariffLicenses" name="licenses" data-select="">
+																			<option value="1m">1 місяць</option>
+																			<option value="3m">3 місяці</option>
+																			<option value="6m">6 місяців</option>
+																			<option value="12m">12 місяців</option>
+																		</select>
+																	</label>
+																</div>
+															</div>
+														</div>
+														<dl class="tariff-card__pricing tariff-pricing">
+															<div class="tariff-pricing__row">
+																<dt>Демо-доступ (2 дні):</dt>
+																<dd>Безкоштовно</dd>
+															</div>
+															<div class="tariff-pricing__row">
+																<dt>1 місяць:</dt>
+																<dd>950 грн.</dd>
+															</div>
+															<div class="tariff-pricing__row">
+																<dt>3 місяці:</dt>
+																<dd>950 грн.</dd>
+															</div>
+															<div class="tariff-pricing__row">
+																<dt>6 місяців:</dt>
+																<dd>950 грн.</dd>
+															</div>
+															<div class="tariff-pricing__row">
+																<dt>12 місяців:</dt>
+																<dd>950 грн.</dd>
+															</div>
+														</dl>
+													</article>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</section>
+							<!-- Section 03: Img-Text (done) -->
+							<section class="admin-img-text" aria-labelledby="sectionImgTextTitle">
+								<div class="admin-img-text__container">
+									<div class="admin-img-text__wrap">
+										<div class="admin-img-text__row">
+											<div class="admin-img-text__col img-text__col--img">
+												<figure class="admin-img-text__img">
+													<picture>
+														<source media="(max-width: 768px)" srcset="./assets/img/admin/products-inner/img-text/01-768.webp" type="image/webp">
+														<source media="(max-width: 1280px)" srcset="./assets/img/admin/products-inner/img-text/01-1280.webp" type="image/webp">
+														<img alt="" width="768" height="450" loading="lazy" decoding="async" src="./assets/img/admin/products-inner/img-text/01.webp">
+													</picture>
+												</figure>
+											</div>
+											<div class="admin-img-text__col img-text__col--text">
+												<div class="admin-img-text__text">
+													<div class="admin-img-text__header">
+														<h2 class="admin-img-text__tag" id="sectionImgTextTitle">Функції продукту</h2>
+														<h3 class="admin-img-text__title">Спеціально розроблений продукт містить :</h3>
+													</div>
+													<div class="admin-img-text__body">
+														<div class="admin-img-text__desc-text desc-text">
+															<p>
+																Акти Міністерства оборони, Генштабу, окремих служб і
+                  військових формувань
+															</p>
+															<p>
+																Всі нормативно-правові акти України з можливістю порівняння
+                  редакцій
+															</p>
+															<p>Рішення судів України з розгалуженою системою пошуку</p>
+															<p>Правові позиції Верховного Суду</p>
+															<p>Щоденно: правові новини та аналіз змін законодавства</p>
+															<p>Зразки процесуальних документів</p>
+															<p>Процедури – алгоритми вирішення юридичних та інших питань</p>
+														</div>
+													</div>
+													<div class="admin-img-text__footer">
+														<div class="admin-img-text__btn-box">
+															<a href="/" class="admin-img-text__link">
+																<span>Більші інформації на сайті</span>
+																<i class="icon-chevron-right" aria-hidden="true"></i>
+															</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
+							<!-- Section 04: CTA (done) -->
+							<section class="admin-section" aria-labelledby="sectionCta">
+								<div class="admin-section__container">
+									<div class="admin-section__wrap">
+										<article class="cta-card">
+											<div class="cta-card__row">
+												<div class="cta-card__body">
+													<h3 class="cta-card__title">Хочете спробувати перед покупкою?</h3>
+													<div class="cta-card__desc-text">
+														<p>
+															Отримайте демо-доступ на 2 дні та переконайтеся, як зручно
+                працювати з ActiveLex.
+														</p>
+													</div>
+												</div>
+												<div class="cta-card__footer">
+													<a href="/" class="cta-card__btn btn" data-variant="primary">
+														<span>Долучитися</span>
+													</a>
+												</div>
+											</div>
+										</article>
+									</div>
+								</div>
+							</section>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<nav class="bottom-nav" aria-label="Нижня навігація">
+			<ul class="bottom-nav__menu">
+				<li>
+					<a href="#" class="_active">
+						<i class="icon-settings-category" aria-hidden="true"></i>
+						<span>Продукти</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="icon-credit-card" aria-hidden="true"></i>
+						<span>Підписки та покупки</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="icon-empty-wallet" aria-hidden="true"></i>
+						<span>Платежі</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="icon-settings" aria-hidden="true"></i>
+						<span>Налаштування</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
+		<script>
+      // ============== MAPS ============== //
+      var maps = [{
+        id: '01',
+        mapEl: '#contact-map',
+        apiKey: 'AIzaSyAgUTZ--Wn2PRezwPDof6TdZpL0oL6FnR8',
+        center: {
+          lat: 50.483425,
+          lng: 29.8756265
+        },
+        options: {
+          zoom: 10,
+          styles: [{
+              featureType: 'administrative',
+              elementType: 'labels.text.fill',
+              stylers: [{
+                color: '#444444',
+              }, ],
+            },
+            {
+              featureType: 'landscape',
+              elementType: 'all',
+              stylers: [{
+                color: '#f4f6f8',
+              }, ],
+            },
+            {
+              featureType: 'poi',
+              elementType: 'all',
+              stylers: [{
+                visibility: 'off',
+              }, ],
+            },
+            {
+              featureType: 'road',
+              elementType: 'all',
+              stylers: [{
+                  saturation: -100,
+                },
+                {
+                  lightness: 45,
+                },
+              ],
+            },
+            {
+              featureType: 'road.highway',
+              elementType: 'all',
+              stylers: [{
+                visibility: 'simplified',
+              }, ],
+            },
+            {
+              featureType: 'road.arterial',
+              elementType: 'labels.icon',
+              stylers: [{
+                visibility: 'off',
+              }, ],
+            },
+            {
+              featureType: 'transit',
+              elementType: 'all',
+              stylers: [{
+                visibility: 'off',
+              }, ],
+            },
+            {
+              featureType: 'water',
+              elementType: 'all',
+              stylers: [{
+                  color: '#d1e7f2',
+                },
+                {
+                  visibility: 'on',
+                },
+              ],
+            },
+          ],
+        },
+        markers: [{
+          position: {
+            lat: 50.483425,
+            lng: 29.8756265
+          },
+          icon: {
+            url: '../../assets/img/icons/map-marker.svg',
+            scaledSize: {
+              width: 40,
+              height: 58,
+            },
+          },
+        }, ],
+      }, ];
+
+      window.maps = maps;
+		</script>
+	</body>
+</html>

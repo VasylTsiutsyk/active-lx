@@ -1,0 +1,1107 @@
+<!doctype html>
+<html lang="uk">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+		<link rel="shortcut icon" href="./assets/favicon/favicon.ico">
+		<meta name="keywords" content="ActiveLex Dashboard">
+		<meta name="description" content="ActiveLex Admin Dashboard">
+		<title>Налаштування | ActiveLex</title>
+		<script type="module" crossorigin="" src="./js/vendor.min.js?v=1772881746717"></script>
+		<script type="module" crossorigin="" src="./js/app.min.js?v=1772881746717"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/style.min.css?v=1772881746717">
+	</head>
+	<body class="body-admin">
+		<div class="wrapper">
+			<div class="admin-layout">
+				<div class="admin-layout__row">
+					<aside class="admin-layout__aside">
+						<aside class="admin-sidebar" aria-label="Навігація кабінету" data-sidebar="">
+							<div class="admin-sidebar__header">
+								<a href="/" class="admin-sidebar__logo">
+									<img src="./assets/img/logo-colored.svg" alt="ActiveLex" width="159" height="36" data-img-ignore="" data-sidebar-logo="default">
+									<img src="./assets/img/logo-xs.svg" alt="ActiveLex" width="30" height="36" data-img-ignore="" data-sidebar-logo="collapsed">
+								</a>
+								<button type="button" aria-label="Collapse Sidebar" class="admin-sidebar__toggle admin-sidebar__toggle--collapse" data-sidebar-toggle="">
+									<i class="icon-sidebar-left" aria-hidden="true"></i>
+								</button>
+							</div>
+							<div class="admin-sidebar__subheader">
+								<button type="button" aria-label="Expand Sidebar" class="admin-sidebar__toggle admin-sidebar__toggle--expand" data-sidebar-toggle="">
+									<i class="icon-sidebar-right" aria-hidden="true"></i>
+								</button>
+							</div>
+							<div class="admin-sidebar__body">
+								<ul class="admin-sidebar__menu" data-sidebar-menu="">
+									<li>
+										<a href="#">
+											<i class="icon-settings-category" aria-hidden="true"></i>
+											<span data-sidebar-menu-label="">Продукти</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="icon-credit-card" aria-hidden="true"></i>
+											<span data-sidebar-menu-label="">Підписки та покупки</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="icon-empty-wallet" aria-hidden="true"></i>
+											<span data-sidebar-menu-label="">Платежі</span>
+										</a>
+									</li>
+									<li>
+										<a href="#" class="_active">
+											<i class="icon-settings" aria-hidden="true"></i>
+											<span data-sidebar-menu-label="">Налаштування</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="admin-sidebar__footer">
+								<ul class="admin-sidebar__menu" data-sidebar-menu="">
+									<li>
+										<a href="#">
+											<i class="icon-headphones" aria-hidden="true"></i>
+											<span data-sidebar-menu-label="">Підтримка</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</aside>
+					</aside>
+					<div class="admin-layout__main">
+						<header class="admin-header">
+							<div class="admin-header__container">
+								<div class="admin-header__wrap">
+									<div class="admin-header__row">
+										<h2 class="admin-header__title">Вітаємо у кабінеті</h2>
+										<a href="/" class="admin-header__logo">
+											<img src="./assets/img/logo-colored.svg" alt="ActiveLex, to homepage" width="140" height="32" fetchpriority="high">
+										</a>
+										<div class="admin-header__btn-box">
+											<div class="admin-header__support admin-header-notif">
+												<button type="button" class="admin-header-notif__btn" aria-label="Support">
+													<i class="icon-headphones" aria-hidden="true"></i>
+												</button>
+											</div>
+											<div class="admin-header__notif admin-header-notif">
+												<button type="button" class="admin-header-notif__btn _new" aria-label="Notifications" data-popup-trigger="adminHeaderNotif">
+													<i class="icon-bell" aria-hidden="true"></i>
+												</button>
+												<div class="admin-header-notif__popup" data-popup="adminHeaderNotif">
+													<div class="admin-header-notif__backdrop" data-popup-close=""></div>
+													<div class="admin-header-notif__content notif-content">
+														<button type="button" class="notif-content__close-btn" aria-label="Close Modal" data-popup-close="">
+															<i class="icon-x" aria-hidden="true"></i>
+														</button>
+														<div class="notif-content__header">
+															<h3 class="notif-content__title">Сповіщення</h3>
+															<button type="button" class="notif-content__back-btn" aria-label="Close Modal" data-popup-close="">
+																<i class="icon-chevron-left" aria-hidden="true"></i>
+															</button>
+														</div>
+														<div class="notif-content__body">
+															<div class="notif-content__scroll-container">
+																<ul class="notif-content__list">
+																	<li>
+																		<article class="notif-item" data-state="new">
+																			<div class="notif-item__header">
+																				<h3 class="notif-item__title">
+																					<span>Підписка завершується</span>
+																				</h3>
+																				<time datetime="#" class="notif-item__date">01.01.2026</time>
+																			</div>
+																			<div class="notif-item__body">
+																				<div class="notif-item__desc-text">
+																					<p>
+																						Термін дії LEX.Юрист спливає через 3 дні. Щоб не втратити доступ, оформіть продовження.
+																					</p>
+																				</div>
+																			</div>
+																		</article>
+																	</li>
+																	<li>
+																		<article class="notif-item" data-state="">
+																			<div class="notif-item__header">
+																				<h3 class="notif-item__title">
+																					<span>Автоподовження вимкнено</span>
+																				</h3>
+																				<time datetime="#" class="notif-item__date">30.11.2025</time>
+																			</div>
+																			<div class="notif-item__body">
+																				<div class="notif-item__desc-text">
+																					<p>
+																						Автоматичне продовження підписки LEX.Нотаріус вимкнено. Доступ діятиме до 06.12.2025.
+																					</p>
+																				</div>
+																			</div>
+																		</article>
+																	</li>
+																	<li>
+																		<article class="notif-item" data-state="danger">
+																			<div class="notif-item__header">
+																				<h3 class="notif-item__title">
+																					<span>Оплата не пройшла</span>
+																				</h3>
+																				<time datetime="#" class="notif-item__date">08.05.2025</time>
+																			</div>
+																			<div class="notif-item__body">
+																				<div class="notif-item__desc-text">
+																					<p>
+																						Не вдалося списати кошти з картки Visa •••• 2378. Перевірте баланс або додайте інший метод оплати.
+																					</p>
+																				</div>
+																			</div>
+																			<div class="notif-item__footer">
+																				<a href="/" class="notif-item__link">
+																					<span>Спробувати знову</span>
+																					<i class="icon-chevron-right" aria-hidden="true"></i>
+																				</a>
+																			</div>
+																		</article>
+																	</li>
+																	<li>
+																		<article class="notif-item" data-state="success">
+																			<div class="notif-item__header">
+																				<h3 class="notif-item__title">
+																					<span>Оплату успішно зараховано</span>
+																				</h3>
+																				<time datetime="#" class="notif-item__date">15.04.2025</time>
+																			</div>
+																			<div class="notif-item__body">
+																				<div class="notif-item__desc-text">
+																					<p>
+																						Оплата за продукт LEX.Адвокат (1 200 ₴) успішно проведена. Підписку продовжено до 12.11.2025.
+																					</p>
+																				</div>
+																			</div>
+																		</article>
+																	</li>
+																	<li>
+																		<article class="notif-item" data-state="">
+																			<div class="notif-item__header">
+																				<h3 class="notif-item__title">
+																					<span>Вхід із нового пристрою</span>
+																				</h3>
+																				<time datetime="#" class="notif-item__date">17.02.2025</time>
+																			</div>
+																			<div class="notif-item__body">
+																				<div class="notif-item__desc-text">
+																					<p>
+																						Здійснено вхід у ваш акаунт з Chrome (Windows), IP 176.36.14.9. Якщо це не ви — негайно змініть пароль.
+																					</p>
+																				</div>
+																			</div>
+																		</article>
+																	</li>
+																</ul>
+															</div>
+														</div>
+														<div class="notif-content__footer"></div>
+													</div>
+												</div>
+											</div>
+											<div class="admin-header__user-quick admin-user-quick">
+												<div class="admin-user-quick__header">
+													<div class="admin-user-quick__avatar" aria-hidden="true">B</div>
+													<div class="admin-user-quick__name">Володимир Мельник</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</header>
+						<div class="admin-layout__content">
+							<!-- Section 01: Main (in progress) -->
+							<section class="admin-section" aria-labelledby="sectionSettingsTitle" data-ct="adminSettingsTabs">
+								<div class="admin-section__container">
+									<div class="admin-section__wrap">
+										<div class="admin-section__header admin-section__header--row">
+											<h2 class="admin-section__title h5" id="sectionSettingsTitle">Налаштування</h2>
+											<div class="admin-section__ct admin-ct">
+												<ul class="admin-ct__tabs">
+													<li>
+														<button data-ct-tab="tab01">
+															<i class="icon-users-frame" aria-hidden="true"></i>
+															<span>Профіль</span>
+														</button>
+													</li>
+													<li>
+														<button data-ct-tab="tab02">
+															<i class="icon-lock" aria-hidden="true"></i>
+															<span>Вхід та безпека</span>
+														</button>
+													</li>
+													<li>
+														<button data-ct-tab="tab03">
+															<i class="icon-bell" aria-hidden="true"></i>
+															<span>Сповіщення</span>
+														</button>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<div class="admin-section__body">
+											<div class="admin-section__panels">
+												<!-- Профіль -->
+												<div class="admin-section__panel" data-ct-panel="tab01">
+													<div class="admin-section__cards">
+														<!-- Особиста інформація -->
+														<div>
+															<!-- Default State -->
+															<div class="mb-6">
+																<article class="admin-info-card">
+																	<div class="admin-info-card__header">
+																		<h3 class="admin-info-card__title">Особиста інформація</h3>
+																		<button class="admin-info-card__edit-btn">
+																			<i class="icon-edit" aria-hidden="true"></i>
+																			<span>Редагувати</span>
+																		</button>
+																	</div>
+																	<div class="admin-info-card__body">
+																		<figure class="admin-info-card__avatar">
+																			<span>B</span>
+																		</figure>
+																		<ul class="admin-info-card__info">
+																			<li>
+																				<span>ПІБ:</span>
+																				<strong>Мельник Володимир Іванович</strong>
+																			</li>
+																			<li>
+																				<span>Телефон:</span>
+																				<strong>+380501869514</strong>
+																			</li>
+																			<li>
+																				<span>Електрона пошта:</span>
+																				<strong>yaroslav.melnyk@example.com</strong>
+																			</li>
+																			<li>
+																				<span>Дата народження:</span>
+																				<strong>22.05.2004</strong>
+																			</li>
+																			<li>
+																				<span>Стать:</span>
+																				<strong>Чоловік</strong>
+																			</li>
+																		</ul>
+																	</div>
+																</article>
+															</div>
+															<!-- Edit State -->
+															<div>
+																<article class="admin-info-card">
+																	<div class="admin-info-card__header">
+																		<h3 class="admin-info-card__title">Особиста інформація</h3>
+																	</div>
+																	<div class="admin-info-card__body">
+																		<figure class="admin-info-card__avatar">
+																			<span>B</span>
+																		</figure>
+																		<form action="#" class="admin-info-card__form admin-info-card-form">
+																			<div class="admin-info-card-form__groups">
+																				<div class="admin-info-card-form__group">
+																					<label for="usernameControl" class="admin-info-card-form__label">ПІБ</label>
+																					<div class="admin-info-card-form__input input" data-size="sm">
+																						<input type="text" name="username" id="usernameControl" placeholder="ПІБ">
+																					</div>
+																				</div>
+																				<div class="admin-info-card-form__group">
+																					<label for="emailControl" class="admin-info-card-form__label">Електрона пошта</label>
+																					<div class="admin-info-card-form__input input" data-size="sm">
+																						<input type="email" name="email" id="emailControl" placeholder="Електрона пошта">
+																					</div>
+																				</div>
+																				<div class="admin-info-card-form__group">
+																					<label for="dobControl" class="admin-info-card-form__label">Дата народження:</label>
+																					<div class="admin-info-card-form__input input" data-size="sm">
+																						<input type="text" name="dob" id="dobControl" placeholder="10.10.1990">
+																					</div>
+																				</div>
+																				<div class="admin-info-card-form__group">
+																					<label for="genderControl" class="admin-info-card-form__label">Стать</label>
+																					<div class="admin-info-card-form__select select" data-size="sm">
+																						<select name="gender" id="genderControl" data-select="" data-select-placeholder="Стать">
+																							<option value="0">Чоловік</option>
+																							<option value="1">Жінка</option>
+																						</select>
+																					</div>
+																				</div>
+																			</div>
+																			<div class="admin-info-card-form__btn-box">
+																				<button type="submit" class="admin-info-card-form__btn btn" data-variant="primary">
+																					<span>Зберегти</span>
+																				</button>
+																			</div>
+																		</form>
+																	</div>
+																</article>
+															</div>
+														</div>
+														<!-- Інформація про компанію -->
+														<div>
+															<!-- Default State -->
+															<div class="mb-6">
+																<article class="admin-info-card">
+																	<div class="admin-info-card__header">
+																		<h3 class="admin-info-card__title">Інформація про компанію</h3>
+																		<button class="admin-info-card__edit-btn">
+																			<i class="icon-edit" aria-hidden="true"></i>
+																			<span>Редагувати</span>
+																		</button>
+																	</div>
+																	<div class="admin-info-card__body">
+																		<ul class="admin-info-card__info">
+																			<li>
+																				<span>Назва компанії:</span>
+																				<strong>ТОВ «Правова Група Актив»</strong>
+																			</li>
+																			<li>
+																				<span>ЄДРПОУ:</span>
+																				<strong>+380501869514</strong>
+																			</li>
+																			<li>
+																				<span>Юридична адреса:</span>
+																				<strong>м. Київ, вул. Хрещатик, 15, офіс 204</strong>
+																			</li>
+																			<li>
+																				<span>Сфера діяльності:</span>
+																				<strong>до 50</strong>
+																			</li>
+																			<li>
+																				<span>Стать:</span>
+																				<strong>Юридичні послуги / консалтинг / аудит</strong>
+																			</li>
+																		</ul>
+																	</div>
+																</article>
+															</div>
+															<!-- Edit State -->
+															<div class="mb-6">
+																<article class="admin-info-card">
+																	<div class="admin-info-card__header">
+																		<h3 class="admin-info-card__title">Інформація про компанію</h3>
+																	</div>
+																	<div class="admin-info-card__body">
+																		<form action="#" class="admin-info-card__form admin-info-card-form">
+																			<div class="admin-info-card-form__groups">
+																				<div class="admin-info-card-form__group">
+																					<label for="companyNameControl" class="admin-info-card-form__label">Назва компанії</label>
+																					<div class="admin-info-card-form__input input" data-size="sm">
+																						<input type="text" name="companyName" id="companyNameControl" placeholder="Назва компанії">
+																					</div>
+																				</div>
+																				<div class="admin-info-card-form__group">
+																					<label for="codeControl" class="admin-info-card-form__label">ЄДРПОУ</label>
+																					<div class="admin-info-card-form__input input" data-size="sm">
+																						<input type="text" name="code" id="codeControl" placeholder="ЄДРПОУ">
+																					</div>
+																				</div>
+																				<div class="admin-info-card-form__group">
+																					<label for="workersCountControl" class="admin-info-card-form__label">Кількість працівників</label>
+																					<div class="admin-info-card-form__select select" data-size="sm">
+																						<select name="workersCount" id="workersCountControl" data-select="" data-select-placeholder="Кількість працівників">
+																							<option value="0">Чоловік</option>
+																							<option value="1">Жінка</option>
+																						</select>
+																					</div>
+																				</div>
+																				<div class="admin-info-card-form__group">
+																					<label for="areaControl" class="admin-info-card-form__label">Сфера діяльності</label>
+																					<div class="admin-info-card-form__input input" data-size="sm">
+																						<input type="text" name="area" id="areaControl" placeholder="Сфера діяльності">
+																					</div>
+																				</div>
+																			</div>
+																			<div class="admin-info-card-form__btn-box">
+																				<button type="submit" class="admin-info-card-form__btn btn" data-variant="primary">
+																					<span>Зберегти</span>
+																				</button>
+																			</div>
+																		</form>
+																	</div>
+																</article>
+															</div>
+															<!-- Empty State -->
+															<div>
+																<article class="admin-info-card">
+																	<div class="admin-info-card__header">
+																		<h3 class="admin-info-card__title">Інформація про компанію</h3>
+																	</div>
+																	<div class="admin-info-card__body">
+																		<div class="admin-info-card__empty admin-info-card-empty">
+																			<h4 class="admin-info-card-empty__title">Інформація про компанію відсутня</h4>
+																			<div class="admin-info-card-empty__desc-text">
+																				<p>Додайте необхідну інформацію для повного заповнення профілю.</p>
+																			</div>
+																			<div class="admin-info-card-empty__btn-box">
+																				<button type="button" class="btn" data-variant="primary">Додати інформацію</button>
+																			</div>
+																		</div>
+																	</div>
+																</article>
+															</div>
+														</div>
+													</div>
+												</div>
+												<!-- Вхід та безпека -->
+												<div class="admin-section__panel" data-ct-panel="tab02">
+													<div class="admin-section__cards">
+														<div>
+															<!-- Пароль -->
+															<div class="mb-6">
+																<article class="admin-info-card">
+																	<div class="admin-info-card__header">
+																		<h3 class="admin-info-card__title">Пароль</h3>
+																		<button class="admin-info-card__edit-btn">
+																			<i class="icon-lock" aria-hidden="true"></i>
+																			<span>Змінити пароль</span>
+																		</button>
+																	</div>
+																	<div class="admin-info-card__body">
+																		<div class="admin-info-card__desc-text desc-text">
+																			<p>
+																				Оновіть свій пароль, натиснувши кнопку нижче. Вас буде
+                перенаправлено на нову сторінку, і вам потрібно буде виконати
+                інструкції.
+																			</p>
+																		</div>
+																	</div>
+																</article>
+															</div>
+															<!-- Двофакторна авторизація (2FA) -->
+															<div class="mb-6">
+																<article class="admin-info-card">
+																	<div class="admin-info-card__header">
+																		<h3 class="admin-info-card__title">Двофакторна авторизація (2FA)</h3>
+																		<label class="switch">
+																			<input type="checkbox" role="switch" checked>
+																			<span class="switch__slider" aria-hidden="true"></span>
+																		</label>
+																	</div>
+																	<div class="admin-info-card__body">
+																		<div class="admin-info-card__desc-text desc-text">
+																			<p>
+																				Увімкніть двофакторну автентифікацію, щоб додати додатковий
+                рівень безпеки до вашого облікового запису. Коли ви ввійдете, ми
+                надішлемо на вашу електронну адресу 6-значний код, який вам
+                потрібно буде ввести, щоб підтвердити свою особу.
+																			</p>
+																		</div>
+																	</div>
+																</article>
+															</div>
+															<!-- Підключені облікові записи -->
+															<div class="mb-6">
+																<article class="admin-info-card">
+																	<div class="admin-info-card__header">
+																		<h3 class="admin-info-card__title">Підключені облікові записи</h3>
+																	</div>
+																	<div class="admin-info-card__body">
+																		<div class="admin-info-card__desc-text desc-text">
+																			<p>
+																				Керуйте обліковими записами соціальних мереж, пов’язаними з
+                вашим профілем, для легкого входу.
+																			</p>
+																		</div>
+																	</div>
+																	<div class="admin-info-card__footer">
+																		<div class="admin-info-card__google">
+																			<figure>
+																				<img src="./assets/img/icons/google.svg" alt="" width="24" height="24" loading="lazy" decoding="async">
+																			</figure>
+																			<span>Google (Не підключено)</span>
+																		</div>
+																		<button type="button" class="admin-info-card__edit-btn">
+																			<i class="icon-link" aria-hidden="true"></i>
+																			<span>Підключити</span>
+																		</button>
+																	</div>
+																</article>
+															</div>
+														</div>
+														<div>
+															<!-- Видалити обліковий запис -->
+															<div class="mb-6">
+																<article class="admin-info-card">
+																	<div class="admin-info-card__header">
+																		<h3 class="admin-info-card__title">Видалити обліковий запис</h3>
+																	</div>
+																	<div class="admin-info-card__body">
+																		<div class="admin-info-card__desc-text desc-text">
+																			<p>Щоб видалити акаунт, зв’яжіться з нашою службою підтримки:</p>
+																		</div>
+																		<div class="admin-info-card__btn-box">
+																			<button class="btn" data-variant="primary" data-size="sm">
+																				<span>Звязатися з підтримкою</span>
+																			</button>
+																		</div>
+																	</div>
+																</article>
+															</div>
+															<!-- Вихід з облікового запису -->
+															<div class="mb-6">
+																<article class="admin-info-card">
+																	<div class="admin-info-card__header">
+																		<h3 class="admin-info-card__title">Вихід з облікового запису</h3>
+																		<button class="admin-info-card__edit-btn admin-info-card__edit-btn--danger" data-modal-target="modalLogoutConfirm">
+																			<i class="icon-logout" aria-hidden="true"></i>
+																			<span>Вийти</span>
+																		</button>
+																	</div>
+																</article>
+															</div>
+														</div>
+													</div>
+												</div>
+												<!-- Сповіщення -->
+												<div class="admin-section__panel" data-ct-panel="tab03">
+													<div class="admin-section__cards">
+														<div>
+															<!-- Системні повідомлення: -->
+															<div class="mb-4">
+																<article class="admin-info-card">
+																	<div class="admin-info-card__header">
+																		<h3 class="admin-info-card__title">Системні повідомлення:</h3>
+																	</div>
+																	<div class="admin-info-card__body">
+																		<div class="admin-info-card__switch-group">
+																			<label for="control01">Оплата успішна / оплата не пройшла</label>
+																			<label class="switch">
+																				<input type="checkbox" role="switch" id="control01">
+																				<span class="switch__slider" aria-hidden="true"></span>
+																			</label>
+																		</div>
+																		<div class="admin-info-card__switch-group">
+																			<label for="control02">Підписка закінчується через 3 дні</label>
+																			<label class="switch">
+																				<input type="checkbox" role="switch" id="control02" checked>
+																				<span class="switch__slider" aria-hidden="true"></span>
+																			</label>
+																		</div>
+																		<div class="admin-info-card__switch-group">
+																			<label for="control03">Новий продукт доступний у вашому кабінеті</label>
+																			<label class="switch">
+																				<input type="checkbox" role="switch" id="control03" checked>
+																				<span class="switch__slider" aria-hidden="true"></span>
+																			</label>
+																		</div>
+																		<div class="admin-info-card__switch-group">
+																			<label for="control04">Зміна пароля або авторизація з нового пристрою</label>
+																			<label class="switch">
+																				<input type="checkbox" role="switch" id="control04">
+																				<span class="switch__slider" aria-hidden="true"></span>
+																			</label>
+																		</div>
+																		<div class="admin-info-card__switch-group">
+																			<label for="control05">Доступ активовано</label>
+																			<label class="switch">
+																				<input type="checkbox" role="switch" id="control05">
+																				<span class="switch__slider" aria-hidden="true"></span>
+																			</label>
+																		</div>
+																	</div>
+																</article>
+															</div>
+															<!-- Канали доставки: -->
+															<div>
+																<article class="admin-info-card">
+																	<div class="admin-info-card__header">
+																		<h3 class="admin-info-card__title">Канали доставки:</h3>
+																	</div>
+																	<div class="admin-info-card__body">
+																		<div class="admin-info-card__switch-group">
+																			<label for="control0201">У кабінеті</label>
+																			<label class="switch">
+																				<input type="checkbox" role="switch" id="control0201" checked>
+																				<span class="switch__slider" aria-hidden="true"></span>
+																			</label>
+																		</div>
+																		<div class="admin-info-card__switch-group">
+																			<label for="control02_02">На електронну пошту</label>
+																			<label class="switch">
+																				<input type="checkbox" role="switch" id="control02_02">
+																				<span class="switch__slider" aria-hidden="true"></span>
+																			</label>
+																		</div>
+																	</div>
+																</article>
+															</div>
+														</div>
+														<div>
+															<!-- Отримувати сповіщення про: -->
+															<div class="">
+																<article class="admin-info-card">
+																	<div class="admin-info-card__header">
+																		<h3 class="admin-info-card__title">Отримувати сповіщення про:</h3>
+																	</div>
+																	<div class="admin-info-card__body">
+																		<div class="admin-info-card__switch-group">
+																			<label for="control03_01">Нові рахунки та оплати</label>
+																			<label class="switch">
+																				<input type="checkbox" role="switch" id="control03_01">
+																				<span class="switch__slider" aria-hidden="true"></span>
+																			</label>
+																		</div>
+																		<div class="admin-info-card__switch-group">
+																			<label for="control03_02">Закінчення терміну підписки</label>
+																			<label class="switch">
+																				<input type="checkbox" role="switch" id="control03_02">
+																				<span class="switch__slider" aria-hidden="true"></span>
+																			</label>
+																		</div>
+																		<div class="admin-info-card__switch-group">
+																			<label for="control03_03">Оновлення в придбаних продуктах</label>
+																			<label class="switch">
+																				<input type="checkbox" role="switch" id="control03_03">
+																				<span class="switch__slider" aria-hidden="true"></span>
+																			</label>
+																		</div>
+																		<div class="admin-info-card__switch-group">
+																			<label for="control03_04">Зміна пароля або авторизація з нового пристрою</label>
+																			<label class="switch">
+																				<input type="checkbox" role="switch" id="control03_04">
+																				<span class="switch__slider" aria-hidden="true"></span>
+																			</label>
+																		</div>
+																	</div>
+																</article>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<nav class="bottom-nav" aria-label="Нижня навігація">
+			<ul class="bottom-nav__menu">
+				<li>
+					<a href="#">
+						<i class="icon-settings-category" aria-hidden="true"></i>
+						<span>Продукти</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="icon-credit-card" aria-hidden="true"></i>
+						<span>Підписки та покупки</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="icon-empty-wallet" aria-hidden="true"></i>
+						<span>Платежі</span>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="_active">
+						<i class="icon-settings" aria-hidden="true"></i>
+						<span>Налаштування</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
+		<div class="modal" hidden data-modal="">
+			<div class="modal__backdrop" aria-hidden="true"></div>
+			<!-- Demo Access -->
+			<div class="modal__container" role="dialog" aria-modal="true" data-modal-container="modalDemoAccess" data-close-on-esc="true" data-close-on-backdrop="true" data-trap-focus="true" data-return-focus="false" data-animation="modal-fadeInUp" data-speed="300" data-size="xs">
+				<button type="button" class="modal__close-btn" aria-label="Close Modal" data-modal-close="">
+					<i class="icon-x" aria-hidden="true"></i>
+				</button>
+				<div class="modal__content modal-content">
+					<div class="modal-content__header">
+						<h3 class="modal-content__title">Підтвердити демо-доступ</h3>
+					</div>
+					<div class="modal-content__body">
+						<div class="modal-content__desc-text desc-text">
+							<p>
+								Ви отримаєте безкоштовний доступ до продукту LEX.Адвокат на 2 дні.
+            Підтвердіть, щоб активувати демо для вашого акаунта.
+							</p>
+						</div>
+					</div>
+					<div class="modal-content__footer">
+						<div class="modal-content__actions">
+							<button type="button" class="btn" data-variant="gray" data-size="sm">
+								<span>Скасувати</span>
+							</button>
+							<button type="button" class="btn" data-variant="primary" data-size="sm">
+								<span>Активувати демо</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Custom Order -->
+			<div class="modal__container" role="dialog" aria-modal="true" data-modal-container="modalCustomOrder" data-close-on-esc="true" data-close-on-backdrop="true" data-trap-focus="true" data-return-focus="false" data-animation="modal-fadeInUp" data-speed="300" data-size="xs">
+				<button type="button" class="modal__close-btn" aria-label="Close Modal" data-modal-close="">
+					<i class="icon-x" aria-hidden="true"></i>
+				</button>
+				<div class="modal__content modal-content">
+					<div class="modal-content__header">
+						<h3 class="modal-content__title">Обговорити індивідуальне замовлення</h3>
+					</div>
+					<div class="modal-content__body">
+						<div class="modal-content__desc-text desc-text">
+							<p>
+								Заповніть форму, щоб отримати персональну пропозицію для вашої
+            організації. Індивідуальні умови діють для замовлень від 10
+            ліцензій.
+							</p>
+						</div>
+						<form action="#" method="post" class="modal-content-form">
+							<div class="modal-content-form__groups">
+								<div class="modal-content-form__group">
+									<label class="modal-content-form__label" for="modalContentFormName">Імʼя</label>
+									<label class="input" data-size="sm" for="modalContentFormName">
+										<input type="text" id="modalContentFormName" name="name" placeholder="Імʼя" autocomplete="name">
+									</label>
+								</div>
+								<div class="modal-content-form__grid">
+									<div class="modal-content-form__group">
+										<label class="modal-content-form__label" for="modalContentFormPhone">Телефон</label>
+										<label class="input" data-size="sm" for="modalContentFormPhone">
+											<input type="tel" id="modalContentFormPhone" name="phone" placeholder="Телефон" autocomplete="tel">
+										</label>
+									</div>
+									<div class="modal-content-form__group">
+										<label class="modal-content-form__label" for="modalContentFormEmail">Email</label>
+										<label class="input" data-size="sm" for="modalContentFormEmail">
+											<input type="email" id="modalContentFormEmail" name="email" placeholder="Email" autocomplete="email">
+										</label>
+									</div>
+								</div>
+								<div class="modal-content-form__group">
+									<label class="modal-content-form__label" for="modalContentFormPosition">Посада</label>
+									<label class="input" data-size="sm" for="modalContentFormPosition">
+										<input type="text" id="modalContentFormPosition" name="position" placeholder="Посада" autocomplete="organization-title">
+									</label>
+								</div>
+							</div>
+							<label class="modal-content-form__agree checkbox checkbox--sm">
+								<input type="checkbox" name="agreement">
+								<span class="checkbox__mark" aria-hidden="true"></span>
+								<span class="checkbox__text">Ознайомився(-лася) та приймаю умови публічного договору.</span>
+							</label>
+							<button type="submit" class="modal-content-form__submit btn">
+								<span>Замовити дзвінок</span>
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+			<!-- Change Password -->
+			<div class="modal__container" role="dialog" aria-modal="true" data-modal-container="modalChangePassword" data-close-on-esc="true" data-close-on-backdrop="true" data-trap-focus="true" data-return-focus="false" data-animation="modal-fadeInUp" data-speed="300" data-size="xs">
+				<button type="button" class="modal__close-btn" aria-label="Close Modal" data-modal-close="">
+					<i class="icon-x" aria-hidden="true"></i>
+				</button>
+				<div class="modal__content modal-content">
+					<div class="modal-content__header">
+						<h3 class="modal-content__title">Зміна паролю</h3>
+					</div>
+					<div class="modal-content__body">
+						<div class="modal-content__desc-text desc-text">
+							<p>
+								Радимо використовувати надійний пароль, що містить літери, цифри та
+            символи.
+							</p>
+						</div>
+						<form action="#" method="post" class="modal-content-password-form">
+							<div class="modal-content-password-form__field">
+								<label class="modal-content-password-form__label" for="modalCurrentPassword">Актуальний пароль</label>
+								<div class="modal-content-password-form__input-wrap">
+									<label class="input input--pass" for="modalCurrentPassword" data-size="sm">
+										<input type="password" id="modalCurrentPassword" name="currentPassword" placeholder="Актуальний пароль" autocomplete="current-password">
+										<button type="button" aria-label="Показати пароль" class="input__toggle"></button>
+									</label>
+								</div>
+							</div>
+							<div class="modal-content-password-form__field">
+								<label class="modal-content-password-form__label" for="modalNewPassword">Новий пароль</label>
+								<div class="modal-content-password-form__input-wrap">
+									<label class="input input--pass" for="modalNewPassword" data-size="sm">
+										<input type="password" id="modalNewPassword" name="newPassword" placeholder="Новий пароль" autocomplete="new-password">
+										<button type="button" aria-label="Показати пароль" class="input__toggle"></button>
+									</label>
+								</div>
+							</div>
+							<div class="modal-content-password-form__field">
+								<label class="modal-content-password-form__label" for="modalRepeatPassword">Повторіть пароль</label>
+								<div class="modal-content-password-form__input-wrap">
+									<label class="input input--pass" for="modalRepeatPassword" data-size="sm">
+										<input type="password" id="modalRepeatPassword" name="repeatPassword" placeholder="Повторіть пароль" autocomplete="new-password">
+										<button type="button" aria-label="Показати пароль" class="input__toggle"></button>
+									</label>
+								</div>
+							</div>
+							<button type="submit" class="modal-content-password-form__submit btn">
+								<span>Змінити пароль</span>
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+			<!-- Logout Confirm -->
+			<div class="modal__container" role="dialog" aria-modal="true" data-modal-container="modalLogoutConfirm" data-close-on-esc="true" data-close-on-backdrop="true" data-trap-focus="true" data-return-focus="false" data-animation="modal-fadeInUp" data-speed="300" data-size="xs">
+				<button type="button" class="modal__close-btn" aria-label="Close Modal" data-modal-close="">
+					<i class="icon-x" aria-hidden="true"></i>
+				</button>
+				<div class="modal__content modal-content">
+					<div class="modal-content__header">
+						<h3 class="modal-content__title">Вийти з акаунта?</h3>
+					</div>
+					<div class="modal-content__body">
+						<div class="modal-content__desc-text desc-text">
+							<p>Ви дійсно хочете вийти зі свого профілю ActiveLex?</p>
+						</div>
+					</div>
+					<div class="modal-content__footer">
+						<div class="modal-content__actions">
+							<button type="button" class="btn" data-variant="gray" data-size="sm" data-modal-close="">
+								<span>Скасувати</span>
+							</button>
+							<button type="button" class="btn" data-variant="primary" data-size="sm">
+								<span>Вийти</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Email-адреси пакета -->
+			<div class="modal__container" role="dialog" aria-modal="true" data-modal-container="modalPackageEmails" data-close-on-esc="true" data-close-on-backdrop="true" data-trap-focus="true" data-return-focus="false" data-animation="modal-fadeInUp" data-speed="300" data-size="xs">
+				<button type="button" class="modal__close-btn" aria-label="Close Modal" data-modal-close="">
+					<i class="icon-x" aria-hidden="true"></i>
+				</button>
+				<div class="modal__content modal-content">
+					<div class="modal-content__header">
+						<h3 class="modal-content__title">Email-адреси пакета</h3>
+					</div>
+					<div class="modal-content__body">
+						<div class="modal-content__desc-text desc-text">
+							<p>Керуйте списком email-ів, які мають доступ до цього пакета.</p>
+						</div>
+						<div class="modal-content__emails modal-emails">
+							<div class="modal-emails__header">
+								<h4 class="modal-emails__title">Список email-ів</h4>
+							</div>
+							<div class="modal-emails__body">
+								<ul class="modal-emails__list">
+									<li>
+										<span class="modal-emails__name">admin@email.com</span>
+										<button class="modal-emails__edit-btn" aria-label="Edit Email">
+											<i class="icon-edit" aria-hidden="true"></i>
+										</button>
+									</li>
+									<li>
+										<span class="modal-emails__name">admin@email.com</span>
+										<button class="modal-emails__edit-btn" aria-label="Edit Email">
+											<i class="icon-edit" aria-hidden="true"></i>
+										</button>
+									</li>
+									<li>
+										<span class="modal-emails__name">admin@email.com</span>
+										<button class="modal-emails__edit-btn" aria-label="Edit Email">
+											<i class="icon-edit" aria-hidden="true"></i>
+										</button>
+									</li>
+									<li>
+										<div class="modal-emails__input input" data-size="sm">
+											<input type="text" name="someName" id="someNameControl" placeholder="Email" value="admin@email.com">
+										</div>
+									</li>
+									<li>
+										<span class="modal-emails__name text-muted">Email не задано</span>
+										<button class="modal-emails__edit-btn" aria-label="Edit Email">
+											<i class="icon-edit" aria-hidden="true"></i>
+										</button>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="modal-content__footer">
+						<div class="modal-content__actions">
+							<button type="button" class="btn" data-variant="gray" data-modal-close="">
+								<span>Скасувати</span>
+							</button>
+							<button type="button" class="btn" data-variant="primary">
+								<span>Зберегти зміни</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="product-info-popup" data-popup="productInfo">
+			<div class="product-info-popup__backdrop" data-popup-close=""></div>
+			<div class="product-info-popup__content product-info-content">
+				<div class="product-info-content__header">
+					<h3 class="product-info-content__title">Інформація про покупку</h3>
+					<button type="button" aria-label="Close Popup" class="product-info-content__close-btn" data-popup-close="">
+						<i class="icon-x" aria-hidden="true"></i>
+					</button>
+				</div>
+				<div class="product-info-content__body">
+					<div class="product-info-content__scroll-container">
+						<div class="product-info-content__body-inner">
+							<div class="product-info-content__group">
+								<h4 class="product-info-content__group-title">Загальна інформація</h4>
+								<ul class="product-info-content__group-list">
+									<li>
+										<span>Продукт:</span>
+										<strong>Професіонал</strong>
+									</li>
+									<li>
+										<span>Строк придбання:</span>
+										<strong>6 місяців</strong>
+									</li>
+									<li>
+										<span>Кількість ліцензій:</span>
+										<strong>5 од.</strong>
+									</li>
+									<li>
+										<span>Власник ліцензії:</span>
+										<strong>admin@email.com</strong>
+									</li>
+									<li>
+										<span>Тип:</span>
+										<strong>Підписка</strong>
+									</li>
+									<li>
+										<span>Статус підписки:</span>
+										<strong>Активна</strong>
+									</li>
+									<li>
+										<span>Дата покупки:</span>
+										<strong>12.11.2025</strong>
+									</li>
+									<li>
+										<span>Дата наступного списання:</span>
+										<strong>12.05.2026</strong>
+									</li>
+									<li>
+										<span>Автопродовження:</span>
+										<label class="switch">
+											<input type="checkbox" checked>
+											<span class="switch__slider" aria-hidden="true"></span>
+										</label>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="product-info-content__footer">
+					<button type="button" class="product-info-content__btn btn" data-size="sm">
+						<span>Продовжити</span>
+					</button>
+				</div>
+			</div>
+		</div>
+		<script>
+      // ============== MAPS ============== //
+      var maps = [{
+        id: '01',
+        mapEl: '#contact-map',
+        apiKey: 'AIzaSyAgUTZ--Wn2PRezwPDof6TdZpL0oL6FnR8',
+        center: {
+          lat: 50.483425,
+          lng: 29.8756265
+        },
+        options: {
+          zoom: 10,
+          styles: [{
+              featureType: 'administrative',
+              elementType: 'labels.text.fill',
+              stylers: [{
+                color: '#444444',
+              }, ],
+            },
+            {
+              featureType: 'landscape',
+              elementType: 'all',
+              stylers: [{
+                color: '#f4f6f8',
+              }, ],
+            },
+            {
+              featureType: 'poi',
+              elementType: 'all',
+              stylers: [{
+                visibility: 'off',
+              }, ],
+            },
+            {
+              featureType: 'road',
+              elementType: 'all',
+              stylers: [{
+                  saturation: -100,
+                },
+                {
+                  lightness: 45,
+                },
+              ],
+            },
+            {
+              featureType: 'road.highway',
+              elementType: 'all',
+              stylers: [{
+                visibility: 'simplified',
+              }, ],
+            },
+            {
+              featureType: 'road.arterial',
+              elementType: 'labels.icon',
+              stylers: [{
+                visibility: 'off',
+              }, ],
+            },
+            {
+              featureType: 'transit',
+              elementType: 'all',
+              stylers: [{
+                visibility: 'off',
+              }, ],
+            },
+            {
+              featureType: 'water',
+              elementType: 'all',
+              stylers: [{
+                  color: '#d1e7f2',
+                },
+                {
+                  visibility: 'on',
+                },
+              ],
+            },
+          ],
+        },
+        markers: [{
+          position: {
+            lat: 50.483425,
+            lng: 29.8756265
+          },
+          icon: {
+            url: '../../assets/img/icons/map-marker.svg',
+            scaledSize: {
+              width: 40,
+              height: 58,
+            },
+          },
+        }, ],
+      }, ];
+
+      window.maps = maps;
+		</script>
+	</body>
+</html>

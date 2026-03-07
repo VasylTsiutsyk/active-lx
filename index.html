@@ -1,0 +1,1339 @@
+<!doctype html>
+<html lang="uk">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+		<link rel="shortcut icon" href="./assets/favicon/favicon.ico">
+		<meta name="keywords" content="ActiveLex Keywords">
+		<meta name="description" content="ActiveLex Description">
+		<title>ActiveLex</title>
+		<script type="module" crossorigin="" src="./js/vendor.min.js?v=1772881746717"></script>
+		<script type="module" crossorigin="" src="./js/app.min.js?v=1772881746717"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/style.min.css?v=1772881746717">
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header">
+				<div class="header__inner">
+					<div class="header__container container container--lg">
+						<div class="header__wrap">
+							<a href="/" class="header__logo">
+								<img src="./assets/img/logo-colored.svg" alt="ActiveLex Logo, to the homepage" width="176" height="40" fetchpriority="high">
+							</a>
+							<div class="header__menu menu" data-menu="">
+								<span id="nav-label" class="sr-only">Navigation</span>
+								<button class="menu__btn" title="Menu" aria-label="Open Menu" aria-expanded="false" aria-labelledby="nav-label" aria-controls="site-menu" data-menu-burger="">
+									<span aria-hidden="true"></span>
+									<span aria-hidden="true"></span>
+									<span aria-hidden="true"></span>
+								</button>
+								<nav class="menu__body" id="site-menu" role="navigation" aria-label="Main Navigation" data-menu-body="">
+									<ul class="menu__list">
+										<li>
+											<a href="#">Продукти та ресурси</a>
+											<button class="menu__arrow" aria-label="Expand Submenu" data-menu-arrow=""></button>
+											<div class="menu__sublist menu-sublist">
+												<div class="menu-sublist__inner">
+													<div class="menu-sublist__pad">
+														<ul class="menu-sublist__list">
+															<li>
+																<a href="#">Item</a>
+															</li>
+															<li>
+																<a href="#">Item</a>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li>
+											<a href="#">Компанія</a>
+										</li>
+										<li>
+											<a href="#">Контакти</a>
+										</li>
+									</ul>
+									<div class="menu__phone-wrap" id="mobilePhoneWrap"></div>
+									<div class="menu__extra" id="mobileMenuExtra"></div>
+								</nav>
+							</div>
+							<div class="header__btn-box">
+								<div class="header__store header-store" data-da="#mobileMenuExtra, 768, 1">
+									<button class="header-store__btn" data-popup-trigger="headerStore">
+										<i class="icon-shop" aria-hidden="true"></i>
+										<span>Магазин LEX</span>
+									</button>
+									<div class="header-store__popup" data-popup="headerStore">
+										<div class="header-store__popup-inner">
+											<div class="header-store__popup-pad">
+												<ul class="header-store__list">
+													<li>
+														<a href="/">Юрист</a>
+													</li>
+													<li>
+														<a href="/">Військовий юрист</a>
+													</li>
+													<li>
+														<a href="/">Адвокат</a>
+													</li>
+													<li>
+														<a href="/">Адвокатський іспит</a>
+													</li>
+													<li>
+														<a href="/">Нотаріус</a>
+													</li>
+													<li>
+														<a href="/">Нотаріус преміум</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="header__phone header-phone" data-da="#mobilePhoneWrap,992,1">
+									<button class="header-phone__btn" data-popup-trigger="headerPhone">
+										<span>+380 (67) 333 9284</span>
+										<i class="icon-chevron-down" aria-hidden="true"></i>
+									</button>
+									<div class="header-phone__popup" data-popup="headerPhone">
+										<div class="header-phone__popup-inner">
+											<div class="header-phone__popup-pad">
+												<ul class="header-phone__list">
+													<li>
+														<a href="tel:+380953339284">+380 (95) 333 92 84</a>
+													</li>
+													<li>
+														<a href="tel:+380953339284">+380 (95) 333 92 84</a>
+													</li>
+													<li>
+														<a href="tel:+380953339284">+380 (95) 333 92 84</a>
+													</li>
+													<li>
+														<a href="tel:+380953339284">+380 (95) 333 92 84</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<a href="/" class="header__notif" aria-label="Notifications">
+									<i class="icon-sms" aria-hidden="true"></i>
+								</a>
+								<a href="/" class="header__login-link" data-da="#mobileMenuExtra, 768, 2">
+									<span>Вхід</span>
+									<i class="icon-login" aria-hidden="true"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+			<main role="main">
+				<!-- Section 01: Hero (done) -->
+				<section class="home-hero" aria-labelledby="sectionHeroTitle">
+					<h1 class="sr-only">ActiveLex Home Page</h1>
+					<div class="home-hero__container container">
+						<div class="home-hero__wrap">
+							<h2 class="home-hero__title h1" id="sectionHeroTitle">
+								Право без хаосу.
+								<br>
+								Робота без сумнівів
+							</h2>
+							<div class="home-hero__desc-text">
+								<p>
+									Актуальне законодавство, офіційні джерела, щоденні оновлення та
+          інструменти — в одній платформі, що дає юристу впевненість у кожному
+          рішенні
+								</p>
+							</div>
+							<div class="home-hero__btn-box">
+								<a href="/" class="btn" data-variant="primary">
+									<span>Обрати рішення</span>
+								</a>
+								<a href="/" class="btn" data-variant="white">
+									<span>Дізнатися більше</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- Section 02: Cases (done) -->
+				<section class="section-cases" aria-labelledby="sectionCasesTitle">
+					<h2 class="sr-only" id="sectionCasesTitle">Cases</h2>
+					<div class="section-cases__container">
+						<div class="section-cases__wrap">
+							<div class="section-cases__body">
+								<div class="section-cases__slider-wrap">
+									<div id="swiperCases" class="swiper">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide">
+												<article class="case-card" data-theme="blue">
+													<figure class="case-card__img">
+														<picture>
+															<source media="(max-width: 768px)" srcset="./assets/img/home/cases/01-768.webp" type="image/webp">
+															<source media="(max-width: 1280px)" srcset="./assets/img/home/cases/01-1280.webp" type="image/webp">
+															<img alt="" width="600" height="400" loading="lazy" decoding="async" src="./assets/img/home/cases/01.webp">
+														</picture>
+													</figure>
+													<div class="case-card__text">
+														<h3 class="case-card__title h4">LEX.Жодних пропущених змін</h3>
+													</div>
+												</article>
+											</div>
+											<div class="swiper-slide">
+												<article class="case-card" data-theme="green">
+													<figure class="case-card__img">
+														<picture>
+															<source media="(max-width: 768px)" srcset="./assets/img/home/cases/02-768.webp" type="image/webp">
+															<source media="(max-width: 1280px)" srcset="./assets/img/home/cases/02-1280.webp" type="image/webp">
+															<img alt="" width="600" height="400" loading="lazy" decoding="async" src="./assets/img/home/cases/02.webp">
+														</picture>
+													</figure>
+													<div class="case-card__text">
+														<h3 class="case-card__title h4">LEX.Жодних пропущених змін</h3>
+													</div>
+												</article>
+											</div>
+											<div class="swiper-slide">
+												<article class="case-card" data-theme="blue">
+													<figure class="case-card__img">
+														<picture>
+															<source media="(max-width: 768px)" srcset="./assets/img/home/cases/03-768.webp" type="image/webp">
+															<source media="(max-width: 1280px)" srcset="./assets/img/home/cases/03-1280.webp" type="image/webp">
+															<img alt="" width="600" height="400" loading="lazy" decoding="async" src="./assets/img/home/cases/03.webp">
+														</picture>
+													</figure>
+													<div class="case-card__text">
+														<h3 class="case-card__title h4">LEX.Жодних пропущених змін</h3>
+													</div>
+												</article>
+											</div>
+											<div class="swiper-slide">
+												<article class="case-card" data-theme="green">
+													<figure class="case-card__img">
+														<picture>
+															<source media="(max-width: 768px)" srcset="./assets/img/home/cases/01-768.webp" type="image/webp">
+															<source media="(max-width: 1280px)" srcset="./assets/img/home/cases/01-1280.webp" type="image/webp">
+															<img alt="" width="600" height="400" loading="lazy" decoding="async" src="./assets/img/home/cases/01.webp">
+														</picture>
+													</figure>
+													<div class="case-card__text">
+														<h3 class="case-card__title h4">LEX.Жодних пропущених змін</h3>
+													</div>
+												</article>
+											</div>
+											<div class="swiper-slide">
+												<article class="case-card" data-theme="blue">
+													<figure class="case-card__img">
+														<picture>
+															<source media="(max-width: 768px)" srcset="./assets/img/home/cases/02-768.webp" type="image/webp">
+															<source media="(max-width: 1280px)" srcset="./assets/img/home/cases/02-1280.webp" type="image/webp">
+															<img alt="" width="600" height="400" loading="lazy" decoding="async" src="./assets/img/home/cases/02.webp">
+														</picture>
+													</figure>
+													<div class="case-card__text">
+														<h3 class="case-card__title h4">LEX.Жодних пропущених змін</h3>
+													</div>
+												</article>
+											</div>
+											<div class="swiper-slide">
+												<article class="case-card" data-theme="green">
+													<figure class="case-card__img">
+														<picture>
+															<source media="(max-width: 768px)" srcset="./assets/img/home/cases/03-768.webp" type="image/webp">
+															<source media="(max-width: 1280px)" srcset="./assets/img/home/cases/03-1280.webp" type="image/webp">
+															<img alt="" width="600" height="400" loading="lazy" decoding="async" src="./assets/img/home/cases/03.webp">
+														</picture>
+													</figure>
+													<div class="case-card__text">
+														<h3 class="case-card__title h4">LEX.Жодних пропущених змін</h3>
+													</div>
+												</article>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="section-cases__footer">
+								<div class="slider-nav slider-nav--centered">
+									<button class="slider-nav__btn" id="swiperCasesPrev">
+										<i class="icon-chevron-left" aria-hidden="true"></i>
+									</button>
+									<div class="slider-nav__pagination" id="swiperCasesPagination"></div>
+									<button class="slider-nav__btn" id="swiperCasesNext">
+										<i class="icon-chevron-right" aria-hidden="true"></i>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- Section 03: Company (done) -->
+				<section class="section-company" aria-labelledby="sectionCompanyTitle">
+					<div class="section-company__container container">
+						<div class="section-company__wrap">
+							<div class="section-company__slider-wrap">
+								<div id="swiperCompany" class="swiper">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<div class="company-slide">
+												<div class="company-slide__row">
+													<div class="company-slide__col company-slide__col--media">
+														<figure class="company-slide__media company-media">
+															<picture>
+																<source media="(max-width: 768px)" srcset="./assets/img/home/company/01-768.webp" type="image/webp">
+																<source media="(max-width: 1280px)" srcset="./assets/img/home/company/01-1280.webp" type="image/webp">
+																<img alt="" width="900" height="650" loading="lazy" decoding="async" src="./assets/img/home/company/01.webp">
+															</picture>
+															<button type="button" class="company-media__play-btn">
+																<i class="icon-play" aria-hidden="true"></i>
+															</button>
+														</figure>
+													</div>
+													<div class="company-slide__col company-slide__col--text">
+														<div class="company-slide__text">
+															<h2 class="company-slide__tag section-tag">Компанія</h2>
+															<h3 class="company-slide__title h2">Ми спрощуємо роботу з правом</h3>
+															<div class="company-slide__desc-text desc-text">
+																<p>
+																	Наша компанія поєднує багаторічний досвід, сучасні технології та
+            постійне оновлення бази, щоб ви завжди мали достовірні дані у
+            зручному форматі.
+																</p>
+																<p>
+																	Ми понад 20 років створюємо технологічні рішення для юристів,
+            адвокатів, нотаріусів та бізнесу. Наша місія — забезпечити швидкий і
+            зручний доступ до актуальної правової інформації, що допомагає
+            професіоналам ухвалювати правильні рішення.
+																</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="company-slide">
+												<div class="company-slide__row">
+													<div class="company-slide__col company-slide__col--media">
+														<figure class="company-slide__media company-media">
+															<picture>
+																<source media="(max-width: 768px)" srcset="./assets/img/home/company/01-768.webp" type="image/webp">
+																<source media="(max-width: 1280px)" srcset="./assets/img/home/company/01-1280.webp" type="image/webp">
+																<img alt="" width="900" height="650" loading="lazy" decoding="async" src="./assets/img/home/company/01.webp">
+															</picture>
+															<button type="button" class="company-media__play-btn">
+																<i class="icon-play" aria-hidden="true"></i>
+															</button>
+														</figure>
+													</div>
+													<div class="company-slide__col company-slide__col--text">
+														<div class="company-slide__text">
+															<h2 class="company-slide__tag section-tag">Компанія</h2>
+															<h3 class="company-slide__title h2">Ми спрощуємо роботу з правом</h3>
+															<div class="company-slide__desc-text desc-text">
+																<p>
+																	Наша компанія поєднує багаторічний досвід, сучасні технології та
+            постійне оновлення бази, щоб ви завжди мали достовірні дані у
+            зручному форматі.
+																</p>
+																<p>
+																	Ми понад 20 років створюємо технологічні рішення для юристів,
+            адвокатів, нотаріусів та бізнесу. Наша місія — забезпечити швидкий і
+            зручний доступ до актуальної правової інформації, що допомагає
+            професіоналам ухвалювати правильні рішення.
+																</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="company-slide">
+												<div class="company-slide__row">
+													<div class="company-slide__col company-slide__col--media">
+														<figure class="company-slide__media company-media">
+															<picture>
+																<source media="(max-width: 768px)" srcset="./assets/img/home/company/01-768.webp" type="image/webp">
+																<source media="(max-width: 1280px)" srcset="./assets/img/home/company/01-1280.webp" type="image/webp">
+																<img alt="" width="900" height="650" loading="lazy" decoding="async" src="./assets/img/home/company/01.webp">
+															</picture>
+															<button type="button" class="company-media__play-btn">
+																<i class="icon-play" aria-hidden="true"></i>
+															</button>
+														</figure>
+													</div>
+													<div class="company-slide__col company-slide__col--text">
+														<div class="company-slide__text">
+															<h2 class="company-slide__tag section-tag">Компанія</h2>
+															<h3 class="company-slide__title h2">Ми спрощуємо роботу з правом</h3>
+															<div class="company-slide__desc-text desc-text">
+																<p>
+																	Наша компанія поєднує багаторічний досвід, сучасні технології та
+            постійне оновлення бази, щоб ви завжди мали достовірні дані у
+            зручному форматі.
+																</p>
+																<p>
+																	Ми понад 20 років створюємо технологічні рішення для юристів,
+            адвокатів, нотаріусів та бізнесу. Наша місія — забезпечити швидкий і
+            зручний доступ до актуальної правової інформації, що допомагає
+            професіоналам ухвалювати правильні рішення.
+																</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="company-slide">
+												<div class="company-slide__row">
+													<div class="company-slide__col company-slide__col--media">
+														<figure class="company-slide__media company-media">
+															<picture>
+																<source media="(max-width: 768px)" srcset="./assets/img/home/company/01-768.webp" type="image/webp">
+																<source media="(max-width: 1280px)" srcset="./assets/img/home/company/01-1280.webp" type="image/webp">
+																<img alt="" width="900" height="650" loading="lazy" decoding="async" src="./assets/img/home/company/01.webp">
+															</picture>
+															<button type="button" class="company-media__play-btn">
+																<i class="icon-play" aria-hidden="true"></i>
+															</button>
+														</figure>
+													</div>
+													<div class="company-slide__col company-slide__col--text">
+														<div class="company-slide__text">
+															<h2 class="company-slide__tag section-tag">Компанія</h2>
+															<h3 class="company-slide__title h2">Ми спрощуємо роботу з правом</h3>
+															<div class="company-slide__desc-text desc-text">
+																<p>
+																	Наша компанія поєднує багаторічний досвід, сучасні технології та
+            постійне оновлення бази, щоб ви завжди мали достовірні дані у
+            зручному форматі.
+																</p>
+																<p>
+																	Ми понад 20 років створюємо технологічні рішення для юристів,
+            адвокатів, нотаріусів та бізнесу. Наша місія — забезпечити швидкий і
+            зручний доступ до актуальної правової інформації, що допомагає
+            професіоналам ухвалювати правильні рішення.
+																</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="section-company__slider-nav-wrap">
+									<div class="section-company__slider-nav slider-nav">
+										<button class="slider-nav__btn" id="swiperCompanyPrev">
+											<i class="icon-chevron-left" aria-hidden="true"></i>
+										</button>
+										<div class="slider-nav__pagination" id="swiperCompanyPagination"></div>
+										<button class="slider-nav__btn" id="swiperCompanyNext">
+											<i class="icon-chevron-right" aria-hidden="true"></i>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- Section 03: Products (done) -->
+				<section class="section-products" aria-labelledby="sectionProductsTitle">
+					<div class="section-products__container container">
+						<div class="section-products__wrap">
+							<div class="section-products__head section-head">
+								<h2 class="section-head__tag section-tag" id="sectionProductsTitle">Продукти</h2>
+								<h3 class="section-head__title h2">Рішення для вашої практики</h3>
+							</div>
+							<div class="section-products__body">
+								<div class="section-products__slider-wrap">
+									<div id="swiperProducts" class="swiper">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide">
+												<article class="ext-product-card">
+													<h3 class="ext-product-card__title h4">Продукти для адвокатів</h3>
+													<div class="ext-product-card__desc-text desc-text">
+														<p>
+															Інструменти для щоденної юридичної роботи: аналітика
+                      судової практики, пошук рішень, створення звітів і
+                      документів. Усе необхідне для ефективної підготовки,
+                      аналізу та супроводу справ.
+														</p>
+													</div>
+													<a href="/" class="ext-product-card__link link">
+														<span>Переглянути</span>
+														<i class="icon-chevron-right" aria-hidden="true"></i>
+													</a>
+													<ul class="ext-product-card__list">
+														<li>
+															<div class="ext-product-item">
+																<div class="ext-product-item__row">
+																	<figure class="ext-product-item__icon">
+																		<img src="./assets/img/home/products/01-01.svg" alt="" width="38" height="38" loading="lazy" decoding="async">
+																	</figure>
+																	<div class="ext-product-item__text">
+																		<h4 class="ext-product-item__title h6">Збірник письмових та усних іспитів</h4>
+																	</div>
+																</div>
+															</div>
+														</li>
+														<li>
+															<div class="ext-product-item">
+																<div class="ext-product-item__row">
+																	<figure class="ext-product-item__icon">
+																		<img src="./assets/img/home/products/01-02.svg" alt="" width="38" height="38" loading="lazy" decoding="async">
+																	</figure>
+																	<div class="ext-product-item__text">
+																		<h4 class="ext-product-item__title h6">Доступ до нормативно-правової бази</h4>
+																	</div>
+																</div>
+															</div>
+														</li>
+													</ul>
+												</article>
+											</div>
+											<div class="swiper-slide">
+												<article class="ext-product-card ext-product-card--green">
+													<h3 class="ext-product-card__title h4">Продукти для юристів</h3>
+													<div class="ext-product-card__desc-text desc-text">
+														<p>
+															Рішення для підготовки та професійної діяльності
+                      адвокатів: база питань для іспитів, зразки процесуальних
+                      документів, аналітика. Допомагає підтримувати високий
+                      рівень експертизи та заощаджувати час у роботі.
+														</p>
+													</div>
+													<a href="/" class="ext-product-card__link link">
+														<span>Переглянути</span>
+														<i class="icon-chevron-right" aria-hidden="true"></i>
+													</a>
+													<ul class="ext-product-card__cards">
+														<li>
+															<article class="product-type-card">
+																<figure class="product-type-card__icon" aria-hidden="true">
+																	<img src="./assets/img/home/products/02-01.svg" alt="" width="52" height="52" loading="lazy" decoding="async">
+																</figure>
+																<h3 class="product-type-card__title h6">Перевірка контрагентів</h3>
+															</article>
+														</li>
+														<li>
+															<article class="product-type-card">
+																<figure class="product-type-card__icon" aria-hidden="true">
+																	<img src="./assets/img/home/products/02-02.svg" alt="" width="52" height="52" loading="lazy" decoding="async">
+																</figure>
+																<h3 class="product-type-card__title h6">Калькулятор відпусток</h3>
+															</article>
+														</li>
+														<li>
+															<article class="product-type-card">
+																<figure class="product-type-card__icon" aria-hidden="true">
+																	<img src="./assets/img/home/products/02-01.svg" alt="" width="52" height="52" loading="lazy" decoding="async">
+																</figure>
+																<h3 class="product-type-card__title h6">Перевірка контрагентів</h3>
+															</article>
+														</li>
+													</ul>
+												</article>
+											</div>
+											<div class="swiper-slide">
+												<article class="ext-product-card">
+													<h3 class="ext-product-card__title h4">Продукти для адвокатів</h3>
+													<div class="ext-product-card__desc-text desc-text">
+														<p>
+															Інструменти для щоденної юридичної роботи: аналітика
+                      судової практики, пошук рішень, створення звітів і
+                      документів. Усе необхідне для ефективної підготовки,
+                      аналізу та супроводу справ.
+														</p>
+													</div>
+													<a href="/" class="ext-product-card__link link">
+														<span>Переглянути</span>
+														<i class="icon-chevron-right" aria-hidden="true"></i>
+													</a>
+													<ul class="ext-product-card__list">
+														<li>
+															<div class="ext-product-item">
+																<div class="ext-product-item__row">
+																	<figure class="ext-product-item__icon">
+																		<img src="./assets/img/home/products/01-01.svg" alt="" width="38" height="38" loading="lazy" decoding="async">
+																	</figure>
+																	<div class="ext-product-item__text">
+																		<h4 class="ext-product-item__title h6">Збірник письмових та усних іспитів</h4>
+																	</div>
+																</div>
+															</div>
+														</li>
+														<li>
+															<div class="ext-product-item">
+																<div class="ext-product-item__row">
+																	<figure class="ext-product-item__icon">
+																		<img src="./assets/img/home/products/01-02.svg" alt="" width="38" height="38" loading="lazy" decoding="async">
+																	</figure>
+																	<div class="ext-product-item__text">
+																		<h4 class="ext-product-item__title h6">Доступ до нормативно-правової бази</h4>
+																	</div>
+																</div>
+															</div>
+														</li>
+													</ul>
+												</article>
+											</div>
+											<div class="swiper-slide">
+												<article class="ext-product-card ext-product-card--green">
+													<h3 class="ext-product-card__title h4">Продукти для юристів</h3>
+													<div class="ext-product-card__desc-text desc-text">
+														<p>
+															Рішення для підготовки та професійної діяльності
+                      адвокатів: база питань для іспитів, зразки процесуальних
+                      документів, аналітика. Допомагає підтримувати високий
+                      рівень експертизи та заощаджувати час у роботі.
+														</p>
+													</div>
+													<a href="/" class="ext-product-card__link link">
+														<span>Переглянути</span>
+														<i class="icon-chevron-right" aria-hidden="true"></i>
+													</a>
+													<ul class="ext-product-card__cards">
+														<li>
+															<article class="product-type-card">
+																<figure class="product-type-card__icon" aria-hidden="true">
+																	<img src="./assets/img/home/products/02-01.svg" alt="" width="52" height="52" loading="lazy" decoding="async">
+																</figure>
+																<h3 class="product-type-card__title h6">Перевірка контрагентів</h3>
+															</article>
+														</li>
+														<li>
+															<article class="product-type-card">
+																<figure class="product-type-card__icon" aria-hidden="true">
+																	<img src="./assets/img/home/products/02-02.svg" alt="" width="52" height="52" loading="lazy" decoding="async">
+																</figure>
+																<h3 class="product-type-card__title h6">Калькулятор відпусток</h3>
+															</article>
+														</li>
+														<li>
+															<article class="product-type-card">
+																<figure class="product-type-card__icon" aria-hidden="true">
+																	<img src="./assets/img/home/products/02-01.svg" alt="" width="52" height="52" loading="lazy" decoding="async">
+																</figure>
+																<h3 class="product-type-card__title h6">Перевірка контрагентів</h3>
+															</article>
+														</li>
+													</ul>
+												</article>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="section-products__footer">
+								<div class="slider-nav slider-nav--centered">
+									<button class="slider-nav__btn" id="swiperProductsPrev">
+										<i class="icon-chevron-left" aria-hidden="true"></i>
+									</button>
+									<div class="slider-nav__pagination" id="swiperProductsPagination"></div>
+									<button class="slider-nav__btn" id="swiperProductsNext">
+										<i class="icon-chevron-right" aria-hidden="true"></i>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- Section 04: Benefits (done) -->
+				<section class="section-benefits" aria-labelledby="sectionBenefitsTitle">
+					<div class="section-benefits__inner">
+						<div class="section-benefits__container container">
+							<div class="section-benefits__wrap">
+								<div class="section-benefits__header section-head">
+									<h2 class="section-head__tag section-tag section-tag--dark" id="sectionBenefitsTitle">Переваги</h2>
+									<h3 class="section-head__title h2">Що робить нас надійними</h3>
+								</div>
+								<div class="section-benefits__body">
+									<ul class="section-benefits__cards">
+										<li>
+											<article class="benefit-card">
+												<figure class="benefit-card__img" aria-hidden="true">
+													<img src="./assets/img/home/benefits/01.svg" alt="" width="42" height="42" loading="lazy" decoding="async">
+												</figure>
+												<h3 class="benefit-card__title h5">Коментарі експертів</h3>
+												<div class="benefit-card__desc-text">
+													<p>
+														Пояснення від юристів і адвокатів допомагають швидко зрозуміти зміни у законодавстві та застосувати їх у роботі.
+													</p>
+												</div>
+											</article>
+										</li>
+										<li>
+											<article class="benefit-card">
+												<figure class="benefit-card__img" aria-hidden="true">
+													<img src="./assets/img/home/benefits/02.svg" alt="" width="42" height="42" loading="lazy" decoding="async">
+												</figure>
+												<h3 class="benefit-card__title h5">Коментарі експертів</h3>
+												<div class="benefit-card__desc-text">
+													<p>
+														Пояснення від юристів і адвокатів допомагають швидко зрозуміти зміни у законодавстві та застосувати їх у роботі.
+													</p>
+												</div>
+											</article>
+										</li>
+										<li>
+											<article class="benefit-card">
+												<figure class="benefit-card__img" aria-hidden="true">
+													<img src="./assets/img/home/benefits/03.svg" alt="" width="42" height="42" loading="lazy" decoding="async">
+												</figure>
+												<h3 class="benefit-card__title h5">Коментарі експертів</h3>
+												<div class="benefit-card__desc-text">
+													<p>
+														Пояснення від юристів і адвокатів допомагають швидко зрозуміти зміни у законодавстві та застосувати їх у роботі.
+													</p>
+												</div>
+											</article>
+										</li>
+									</ul>
+								</div>
+								<div class="section-benefits__footer">
+									<article class="cta-card cta-card--green">
+										<div class="cta-card__row">
+											<div class="cta-card__body">
+												<h3 class="cta-card__title">Оберіть продукт що підходить саме вам</h3>
+												<div class="cta-card__desc-text">
+													<p>
+														Актуальна база законодавства, інструменти для юристів,
+                    нотаріусів та бізнесу. Оберіть пакет і почніть роботу вже
+                    сьогодні
+													</p>
+												</div>
+											</div>
+											<div class="cta-card__footer">
+												<a href="/" class="cta-card__btn btn" data-variant="primary">
+													<span>Переглянути продукти</span>
+												</a>
+											</div>
+										</div>
+									</article>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- Section 05: News (done) -->
+				<section class="section-news" aria-labelledby="sectionNewsTitle">
+					<div class="section-news__container container">
+						<div class="section-news__wrap">
+							<div class="section-news__header section-head">
+								<h2 class="section-head__tag section-tag" id="sectionNewsTitle">Новини</h2>
+								<h3 class="section-head__title h2">Останні новини</h3>
+							</div>
+							<div class="section-news__body">
+								<ul class="section-news__cards">
+									<li>
+										<article class="article-card">
+											<a href="/" class="article-card__inner">
+												<figure class="article-card__media">
+													<picture>
+														<source media="(max-width: 768px)" srcset="./assets/img/home/news/01-768.webp" type="image/webp">
+														<source media="(max-width: 1280px)" srcset="./assets/img/home/news/01-1280.webp" type="image/webp">
+														<img alt="Верховна Рада ухвалила новий закон про нотаріат" width="494" height="297" loading="lazy" decoding="async" src="./assets/img/home/news/01.webp">
+													</picture>
+												</figure>
+												<div class="article-card__text">
+													<div class="article-card__meta">
+														<ul class="article-card__tags">
+															<li>Аналітика</li>
+														</ul>
+													</div>
+													<h3 class="article-card__title h5">Верховна Рада ухвалила новий закон про нотаріат</h3>
+													<div class="article-card__desc-text">
+														<p>
+															Новий пакет поправок до Податкового кодексу вже набув чинності. Ми зібрали головні пункти які допоможуть уникнути штрафів та помилок.
+														</p>
+													</div>
+												</div>
+											</a>
+										</article>
+									</li>
+									<li>
+										<article class="article-card">
+											<a href="/" class="article-card__inner">
+												<figure class="article-card__media">
+													<picture>
+														<source media="(max-width: 768px)" srcset="./assets/img/home/news/02-768.webp" type="image/webp">
+														<source media="(max-width: 1280px)" srcset="./assets/img/home/news/02-1280.webp" type="image/webp">
+														<img alt="Судова практика у справах про військову службу" width="494" height="297" loading="lazy" decoding="async" src="./assets/img/home/news/02.webp">
+													</picture>
+												</figure>
+												<div class="article-card__text">
+													<div class="article-card__meta">
+														<ul class="article-card__tags">
+															<li>Експертні поради</li>
+														</ul>
+													</div>
+													<h3 class="article-card__title h5">Судова практика у справах про військову службу</h3>
+													<div class="article-card__desc-text">
+														<p>
+															Новий пакет поправок до Податкового кодексу вже набув чинності. Ми зібрали головні пункти які допоможуть уникнути штрафів та помилок.
+														</p>
+													</div>
+												</div>
+											</a>
+										</article>
+									</li>
+									<li>
+										<article class="article-card">
+											<a href="/" class="article-card__inner">
+												<figure class="article-card__media">
+													<picture>
+														<source media="(max-width: 768px)" srcset="./assets/img/home/news/03-768.webp" type="image/webp">
+														<source media="(max-width: 1280px)" srcset="./assets/img/home/news/03-1280.webp" type="image/webp">
+														<img alt="Податкові зміни 2025: що потрібно знати підприємцям" width="494" height="297" loading="lazy" decoding="async" src="./assets/img/home/news/03.webp">
+													</picture>
+												</figure>
+												<div class="article-card__text">
+													<div class="article-card__meta">
+														<ul class="article-card__tags">
+															<li>Навчальні матеріали</li>
+														</ul>
+													</div>
+													<h3 class="article-card__title h5">Податкові зміни 2025: що потрібно знати підприємцям</h3>
+													<div class="article-card__desc-text">
+														<p>
+															Новий пакет поправок до Податкового кодексу вже набув чинності. Ми зібрали головні пункти які допоможуть уникнути штрафів та помилок.
+														</p>
+													</div>
+												</div>
+											</a>
+										</article>
+									</li>
+								</ul>
+							</div>
+							<div class="section-news__footer">
+								<div class="section-news__btn-box">
+									<a href="/" class="btn" data-variant="primary">
+										<span>Усі новини</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- Section 06: Contact Form (done) -->
+				<section class="section-contacts-form" aria-labelledby="sectionContactsFormTitle">
+					<div class="section-contacts-form__container container">
+						<div class="section-contacts-form__wrap">
+							<div class="section-contacts-form__row">
+								<div class="section-contacts-form__col">
+									<article class="section-contacts-form__card contact-form-card contact-form-card--green">
+										<div class="contact-form-card__header">
+											<h2 class="contact-form-card__title h3" id="sectionContactsFormTitle">Шукаєте рішення для компанії?</h2>
+											<div class="contact-form-card__desc-text">
+												<p>Залиште свої дані — ми допоможемо підібрати рішення саме для вас</p>
+											</div>
+										</div>
+										<div class="contact-form-card__body">
+											<form action="#" method="post" class="contact-form-card__form">
+												<div class="contact-form-card__grid">
+													<label class="input input--white" for="contactName">
+														<input type="text" id="contactName" name="name" placeholder="Ім’я" autocomplete="name">
+													</label>
+													<label class="input input--white" for="contactEmail">
+														<input type="email" id="contactEmail" name="email" placeholder="Електронна пошта" autocomplete="email">
+													</label>
+												</div>
+												<label class="input input--white" for="contactMessage">
+													<textarea rows="9" id="contactMessage" name="message" placeholder="Повідомлення"></textarea>
+												</label>
+											</form>
+										</div>
+										<div class="contact-form-card__footer">
+											<button type="submit" class="contact-form-card__btn btn" data-variant="primary">
+												<span>Отримати консультацію</span>
+											</button>
+										</div>
+									</article>
+								</div>
+								<div class="section-contacts-form__col">
+									<figure class="section-contacts-form__media section-contacts-form__media--green">
+										<picture>
+											<source media="(max-width: 768px)" srcset="./assets/img/home/form/01-768.webp" type="image/webp">
+											<source media="(max-width: 1280px)" srcset="./assets/img/home/form/01-1280.webp" type="image/webp">
+											<img alt="Команда ActiveLex" width="750" height="615" loading="lazy" decoding="async" src="./assets/img/home/form/01.webp">
+										</picture>
+									</figure>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+			<footer class="footer" role="contentinfo">
+				<div class="footer__inner">
+					<div class="footer__container container container--lg">
+						<div class="footer__wrap">
+							<div class="footer__top footer-top">
+								<div class="footer-top__row">
+									<div class="footer-top__col footer-top__col--info">
+										<div class="footer-top__info">
+											<a href="/" class="footer-top__logo">
+												<img src="./assets/img/logo.svg" alt="ActiveLex Logo, to homepage" width="176" height="40" loading="lazy" decoding="async">
+											</a>
+											<ul class="footer-top__contacts">
+												<li>
+													<a href="/">вул. Срібнокільська 1, оф. 269 м. Київ, 02095, Україна</a>
+												</li>
+											</ul>
+											<div class="footer-top__desc-text">
+												<p>
+													Комплексне рішення для роботи, навчання та розвитку в юридичній
+            сфері.
+												</p>
+											</div>
+											<a href="/" class="footer-top__link">
+												<span>Партнерська програма</span>
+												<i class="icon-chevron-right" aria-hidden="true"></i>
+											</a>
+										</div>
+									</div>
+									<div class="footer-top__col footer-top__col--menu">
+										<div class="footer-top__groups">
+											<div class="footer-top__group footer-group">
+												<h3 class="footer-group__title">Розділи</h3>
+												<nav class="footer-group__nav">
+													<ul class="footer-group__menu">
+														<li>
+															<a href="/">Компанія</a>
+														</li>
+														<li>
+															<a href="/">Вакансії</a>
+														</li>
+														<li>
+															<a href="/">Продукти та ресурси</a>
+														</li>
+														<li>
+															<a href="/">Новини</a>
+														</li>
+														<li>
+															<a href="/">Події</a>
+														</li>
+														<li>
+															<a href="/">Блог</a>
+														</li>
+														<li>
+															<a href="/">Контакти</a>
+														</li>
+													</ul>
+												</nav>
+											</div>
+											<div class="footer-top__group footer-group">
+												<h3 class="footer-group__title">Магазин</h3>
+												<nav class="footer-group__nav">
+													<ul class="footer-group__menu">
+														<li>
+															<a href="/">Юрист</a>
+														</li>
+														<li>
+															<a href="/">Військовий юрист</a>
+														</li>
+														<li>
+															<a href="/">Адвокат</a>
+														</li>
+														<li>
+															<a href="/">Адвокатський іспит</a>
+														</li>
+														<li>
+															<a href="/">Нотаріус</a>
+														</li>
+														<li>
+															<a href="/">Нотаріус преміум</a>
+														</li>
+													</ul>
+												</nav>
+											</div>
+											<div class="footer-top__group footer-group">
+												<h3 class="footer-group__title">Контакти</h3>
+												<nav class="footer-group__nav">
+													<ul class="footer-group__menu">
+														<li>
+															<a href="/">+380 (44) 333 92 84</a>
+														</li>
+														<li>
+															<a href="/">+380 (67) 333 92 84</a>
+														</li>
+														<li>
+															<a href="/">+380 (63) 333 92 84</a>
+														</li>
+														<li>
+															<a href="/">+380 (95) 333 92 84</a>
+														</li>
+														<li>
+															<a href="/">info@activelex.com</a>
+														</li>
+													</ul>
+												</nav>
+											</div>
+										</div>
+									</div>
+									<div class="footer-top__col footer-top__col--soc">
+										<ul class="footer-top__soc soc soc--dark" data-size="sm">
+											<li>
+												<a href="http://#" target="_blank" rel="noopener noreferrer" aria-label="Twitter X">
+													<i class="icon-twitter-x" aria-hidden="true"></i>
+												</a>
+											</li>
+											<li>
+												<a href="http://#" target="_blank" rel="noopener noreferrer" aria-label="Youtube">
+													<i class="icon-youtube" aria-hidden="true"></i>
+												</a>
+											</li>
+											<li>
+												<a href="http://#" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+													<i class="icon-facebook" aria-hidden="true"></i>
+												</a>
+											</li>
+											<li>
+												<a href="http://#" target="_blank" rel="noopener noreferrer" aria-label="Linkedin">
+													<i class="icon-linkedin" aria-hidden="true"></i>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="footer__bottom footer-bottom">
+								<div class="footer-bottom__row">
+									<small class="footer-bottom__copyright">© 2012–2026 ActiveLex — Інформаційні та аналітичні рішення для юристів</small>
+									<ul class="footer-bottom__legacy-menu">
+										<li>
+											<a href="/">Політика конфіденційності</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+		<div class="modal" hidden data-modal="">
+			<div class="modal__backdrop" aria-hidden="true"></div>
+			<!-- Custom Order -->
+			<div class="modal__container" role="dialog" aria-modal="true" data-modal-container="modalCustomOrder" data-close-on-esc="true" data-close-on-backdrop="true" data-trap-focus="true" data-return-focus="false" data-animation="modal-fadeInUp" data-speed="300" data-size="xs">
+				<button type="button" class="modal__close-btn" aria-label="Close Modal" data-modal-close="">
+					<i class="icon-x" aria-hidden="true"></i>
+				</button>
+				<div class="modal__content modal-content">
+					<div class="modal-content__header">
+						<h3 class="modal-content__title">Обговорити індивідуальне замовлення</h3>
+					</div>
+					<div class="modal-content__body">
+						<div class="modal-content__desc-text desc-text">
+							<p>
+								Заповніть форму, щоб отримати персональну пропозицію для вашої
+            організації. Індивідуальні умови діють для замовлень від 10
+            ліцензій.
+							</p>
+						</div>
+						<form action="#" method="post" class="modal-content-form">
+							<div class="modal-content-form__groups">
+								<div class="modal-content-form__group">
+									<label class="modal-content-form__label" for="modalContentFormName">Імʼя</label>
+									<label class="input" data-size="sm" for="modalContentFormName">
+										<input type="text" id="modalContentFormName" name="name" placeholder="Імʼя" autocomplete="name">
+									</label>
+								</div>
+								<div class="modal-content-form__grid">
+									<div class="modal-content-form__group">
+										<label class="modal-content-form__label" for="modalContentFormPhone">Телефон</label>
+										<label class="input" data-size="sm" for="modalContentFormPhone">
+											<input type="tel" id="modalContentFormPhone" name="phone" placeholder="Телефон" autocomplete="tel">
+										</label>
+									</div>
+									<div class="modal-content-form__group">
+										<label class="modal-content-form__label" for="modalContentFormEmail">Email</label>
+										<label class="input" data-size="sm" for="modalContentFormEmail">
+											<input type="email" id="modalContentFormEmail" name="email" placeholder="Email" autocomplete="email">
+										</label>
+									</div>
+								</div>
+								<div class="modal-content-form__group">
+									<label class="modal-content-form__label" for="modalContentFormPosition">Посада</label>
+									<label class="input" data-size="sm" for="modalContentFormPosition">
+										<input type="text" id="modalContentFormPosition" name="position" placeholder="Посада" autocomplete="organization-title">
+									</label>
+								</div>
+							</div>
+							<label class="modal-content-form__agree checkbox checkbox--sm">
+								<input type="checkbox" name="agreement">
+								<span class="checkbox__mark" aria-hidden="true"></span>
+								<span class="checkbox__text">Ознайомився(-лася) та приймаю умови публічного договору.</span>
+							</label>
+							<button type="submit" class="modal-content-form__submit btn">
+								<span>Замовити дзвінок</span>
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+			<!-- Purchase Success -->
+			<div class="modal__container" role="dialog" aria-modal="true" data-modal-container="modalPurchaseSuccess" data-close-on-esc="true" data-close-on-backdrop="true" data-trap-focus="true" data-return-focus="false" data-animation="modal-fadeInUp" data-speed="300" data-size="xs">
+				<button type="button" class="modal__close-btn" aria-label="Close Modal" data-modal-close="">
+					<i class="icon-x" aria-hidden="true"></i>
+				</button>
+				<div class="modal__content modal-content">
+					<div class="modal-content__header">
+						<h3 class="modal-content__title">Покупку успішно оформлено!</h3>
+					</div>
+					<div class="modal-content__body">
+						<div class="modal-content__desc-text desc-text">
+							<p>
+								Вітаємо! Ваше замовлення прийнято та обробляється. Деталі й код(и)
+            доступу вже надіслані на вашу електронну пошту, а також доступні у
+            розділі «Мої покупки» в особистому кабінеті.
+							</p>
+						</div>
+					</div>
+					<div class="modal-content__footer">
+						<div class="modal-content__actions">
+							<a href="/" class="btn" data-variant="gray" data-size="sm">
+								<span>На головну</span>
+							</a>
+							<a href="/admin-products.html" class="btn" data-variant="primary" data-size="sm">
+								<span>Увійти в кабінет</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Demo Order -->
+			<div class="modal__container" role="dialog" aria-modal="true" data-modal-container="modalDemoOrder" data-close-on-esc="true" data-close-on-backdrop="true" data-trap-focus="true" data-return-focus="false" data-animation="modal-fadeInUp" data-speed="300" data-size="xs">
+				<button type="button" class="modal__close-btn" aria-label="Close Modal" data-modal-close="">
+					<i class="icon-x" aria-hidden="true"></i>
+				</button>
+				<div class="modal__content modal-content">
+					<div class="modal-content__header">
+						<h3 class="modal-content__title">Замовити демо-доступ</h3>
+					</div>
+					<div class="modal-content__body">
+						<div class="modal-content__desc-text desc-text">
+							<p>
+								Ви отримаєте безкоштовний доступ до продукту LEX.Адвокат на 2 дні.
+            Підтвердіть, щоб активувати демо для вашого акаунта.
+							</p>
+						</div>
+						<form action="#" method="post" class="modal-content-form">
+							<div class="modal-content-form__groups">
+								<div class="modal-content-form__group">
+									<label class="modal-content-form__label" for="modalDemoFormName">Імʼя</label>
+									<label class="input" data-size="sm" for="modalDemoFormName">
+										<input type="text" id="modalDemoFormName" name="name" placeholder="Імʼя" autocomplete="name">
+									</label>
+								</div>
+								<div class="modal-content-form__grid">
+									<div class="modal-content-form__group">
+										<label class="modal-content-form__label" for="modalDemoFormPhone">Телефон</label>
+										<label class="input" data-size="sm" for="modalDemoFormPhone">
+											<input type="tel" id="modalDemoFormPhone" name="phone" placeholder="Телефон" autocomplete="tel">
+										</label>
+									</div>
+									<div class="modal-content-form__group">
+										<label class="modal-content-form__label" for="modalDemoFormEmail">Email</label>
+										<label class="input" data-size="sm" for="modalDemoFormEmail">
+											<input type="email" id="modalDemoFormEmail" name="email" placeholder="Email" autocomplete="email">
+										</label>
+									</div>
+								</div>
+								<div class="modal-content-form__group">
+									<label class="modal-content-form__label" for="modalDemoFormPosition">Посада</label>
+									<label class="input" data-size="sm" for="modalDemoFormPosition">
+										<input type="text" id="modalDemoFormPosition" name="position" placeholder="Посада" autocomplete="organization-title">
+									</label>
+								</div>
+							</div>
+							<label class="modal-content-form__agree checkbox checkbox--sm">
+								<input type="checkbox" name="agreement">
+								<span class="checkbox__mark" aria-hidden="true"></span>
+								<span class="checkbox__text">Ознайомився(-лася) та приймаю умови публічного договору.</span>
+							</label>
+							<button type="submit" class="modal-content-form__submit btn">
+								<span>Замовити</span>
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+			<!-- Demo Success -->
+			<div class="modal__container" role="dialog" aria-modal="true" data-modal-container="modalDemoSuccess" data-close-on-esc="true" data-close-on-backdrop="true" data-trap-focus="true" data-return-focus="false" data-animation="modal-fadeInUp" data-speed="300" data-size="xs">
+				<button type="button" class="modal__close-btn" aria-label="Close Modal" data-modal-close="">
+					<i class="icon-x" aria-hidden="true"></i>
+				</button>
+				<div class="modal__content modal-content">
+					<div class="modal-content__header">
+						<h3 class="modal-content__title">Демо-доступ оформлено</h3>
+					</div>
+					<div class="modal-content__body">
+						<div class="modal-content__desc-text desc-text">
+							<p>
+								Ви успішно оформили безкоштовний доступ до продукту LEX.Адвокат на 2
+            дні. Деталі доступу вже надіслані на вашу електронну пошту.
+							</p>
+						</div>
+					</div>
+					<div class="modal-content__footer">
+						<div class="modal-content__actions">
+							<a href="/store.html" class="btn" data-variant="gray" data-size="sm">
+								<span>Дивитися інші продукти</span>
+							</a>
+							<a href="/admin-products.html" class="btn" data-variant="primary" data-size="sm">
+								<span>Увійти в кабінет</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Vacancy Details -->
+			<div class="modal__container" role="dialog" aria-modal="true" data-modal-container="modalVacancyDetails" data-close-on-esc="true" data-close-on-backdrop="true" data-trap-focus="true" data-return-focus="false" data-animation="modal-fadeInUp" data-speed="300" data-size="xs">
+				<button type="button" class="modal__close-btn" aria-label="Close Modal" data-modal-close="">
+					<i class="icon-x" aria-hidden="true"></i>
+				</button>
+				<div class="modal__content modal-content modal-vacancy">
+					<div class="modal-content__header">
+						<h3 class="modal-content__title">Менеджер із продажу</h3>
+					</div>
+					<div class="modal-content__body">
+						<div class="modal-vacancy__scroll">
+							<div class="modal-content__desc-text desc-text">
+								<p>
+									ActiveLex шукає комунікабельного менеджера, який допоможе
+              розвивати клієнтську базу платформи та презентувати її можливості
+              новим користувачам.
+								</p>
+								<p>
+									Робота поєднує спілкування з клієнтами, проведення коротких
+              онлайн-демо, обробку запитів і супровід користувачів на всіх
+              етапах співпраці.
+								</p>
+								<p>
+									Важливо розуміти базові принципи юридичної діяльності, адже наші
+              продукти створені для юристів, нотаріусів і представників бізнесу.
+								</p>
+							</div>
+							<div class="modal-vacancy__group">
+								<h4 class="modal-vacancy__group-title">Про вакансію</h4>
+								<ul class="modal-vacancy__list">
+									<li>Локація: Київ / Віддалено (гібридний формат)</li>
+									<li>Тип зайнятості: Повна зайнятість</li>
+									<li>Графік: Пн-Пт, 09:00-18:00</li>
+									<li>Оплата: Ставка + бонуси за результат</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="modal-content__footer">
+						<button type="button" class="btn w-full" data-variant="primary" data-size="sm">
+							<span>Відгукнутись</span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+      // ============== MAPS ============== //
+      var maps = [{
+        id: '01',
+        mapEl: '#contact-map',
+        apiKey: 'AIzaSyAgUTZ--Wn2PRezwPDof6TdZpL0oL6FnR8',
+        center: {
+          lat: 50.483425,
+          lng: 29.8756265
+        },
+        options: {
+          zoom: 10,
+          styles: [{
+              featureType: 'administrative',
+              elementType: 'labels.text.fill',
+              stylers: [{
+                color: '#444444',
+              }, ],
+            },
+            {
+              featureType: 'landscape',
+              elementType: 'all',
+              stylers: [{
+                color: '#f4f6f8',
+              }, ],
+            },
+            {
+              featureType: 'poi',
+              elementType: 'all',
+              stylers: [{
+                visibility: 'off',
+              }, ],
+            },
+            {
+              featureType: 'road',
+              elementType: 'all',
+              stylers: [{
+                  saturation: -100,
+                },
+                {
+                  lightness: 45,
+                },
+              ],
+            },
+            {
+              featureType: 'road.highway',
+              elementType: 'all',
+              stylers: [{
+                visibility: 'simplified',
+              }, ],
+            },
+            {
+              featureType: 'road.arterial',
+              elementType: 'labels.icon',
+              stylers: [{
+                visibility: 'off',
+              }, ],
+            },
+            {
+              featureType: 'transit',
+              elementType: 'all',
+              stylers: [{
+                visibility: 'off',
+              }, ],
+            },
+            {
+              featureType: 'water',
+              elementType: 'all',
+              stylers: [{
+                  color: '#d1e7f2',
+                },
+                {
+                  visibility: 'on',
+                },
+              ],
+            },
+          ],
+        },
+        markers: [{
+          position: {
+            lat: 50.483425,
+            lng: 29.8756265
+          },
+          icon: {
+            url: '../../assets/img/icons/map-marker.svg',
+            scaledSize: {
+              width: 40,
+              height: 58,
+            },
+          },
+        }, ],
+      }, ];
+
+      window.maps = maps;
+		</script>
+	</body>
+</html>

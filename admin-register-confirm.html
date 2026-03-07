@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="uk">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+		<link rel="shortcut icon" href="./assets/favicon/favicon.ico">
+		<meta name="keywords" content="ActiveLex Confirm Email">
+		<meta name="description" content="ActiveLex Admin Confirm Email">
+		<title>Підтвердження пошти | ActiveLex</title>
+		<script type="module" crossorigin="" src="./js/vendor.min.js?v=1772881746717"></script>
+		<script type="module" crossorigin="" src="./js/app.min.js?v=1772881746717"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/style.min.css?v=1772881746717">
+	</head>
+	<body class="body-admin body-admin-auth">
+		<div class="wrapper">
+			<main class="admin-auth-layout">
+				<div class="admin-auth-layout__inner">
+					<div class="admin-auth-layout__left">
+						<a href="/" class="admin-auth-layout__logo">
+							<img src="./assets/img/logo-colored.svg" alt="ActiveLex, to homepage" width="176" height="40" fetchpriority="high">
+						</a>
+						<div class="admin-auth-layout__content">
+							<section class="admin-auth-page" aria-labelledby="adminAuthRegisterConfirmTitle">
+								<div class="admin-auth-page__container">
+									<div class="admin-auth-page__wrap">
+										<div class="admin-auth-page__content">
+											<h1 class="admin-auth-page__title" id="adminAuthRegisterConfirmTitle">Підтвердження електронної пошти</h1>
+											<div class="admin-auth-page__desc-text desc-text">
+												<p>
+													Ми надіслали код підтвердження на вашу електронну адресу. Введіть
+            його нижче, щоб завершити реєстрацію.
+												</p>
+											</div>
+											<form action="#" method="post" class="admin-auth-page__form">
+												<div class="admin-auth-page__groups">
+													<div class="admin-auth-page__group">
+														<label class="admin-auth-page__label" for="adminConfirmCode">Код підтвердження</label>
+														<label class="input" data-size="sm" for="adminConfirmCode">
+															<input type="text" id="adminConfirmCode" name="code" placeholder="00 00" autocomplete="one-time-code">
+														</label>
+													</div>
+												</div>
+												<div class="admin-auth-page__actions">
+													<button type="submit" class="btn" data-variant="primary" data-size="sm">
+														<span>Підтвердити</span>
+													</button>
+												</div>
+											</form>
+										</div>
+										<div class="admin-auth-page__bottom-text">
+											<p>Не отримали листа?</p>
+											<p>
+												<a href="#">Надіслати код повторно</a>
+												(00:45)
+											</p>
+										</div>
+									</div>
+								</div>
+							</section>
+						</div>
+					</div>
+					<aside class="admin-auth-layout__right">
+						<section class="admin-auth-reviews" aria-label="Відгуки користувачів">
+							<div class="admin-auth-reviews__inner">
+								<a href="/" class="admin-auth-reviews__logo">
+									<img src="./assets/img/logo-colored.svg" alt="ActiveLex, to homepage" width="133" height="30" fetchpriority="high">
+								</a>
+								<div class="admin-auth-reviews__content">
+									<div class="admin-auth-reviews__slider">
+										<div id="swiperAdminAuthReviews" class="swiper">
+											<div class="swiper-wrapper">
+												<div class="swiper-slide">
+													<article class="admin-review-card" data-review-id="admin-auth-review-01">
+														<div class="admin-review-card__header">
+															<figure class="admin-review-card__avatar">
+																<picture>
+																	<source media="(max-width: 768px)" srcset="./assets/img/blog/cta/02-768.webp" type="image/webp">
+																	<source media="(max-width: 1280px)" srcset="./assets/img/blog/cta/02-1280.webp" type="image/webp">
+																	<img alt="Марія Коваленко" width="64" height="64" loading="lazy" decoding="async" src="./assets/img/blog/cta/02.webp">
+																</picture>
+															</figure>
+															<div class="admin-review-card__meta">
+																<h3 class="admin-review-card__name h6">Марія Коваленко</h3>
+																<p class="admin-review-card__position">Адвокат</p>
+															</div>
+														</div>
+														<div class="admin-review-card__body">
+															<p>
+																Ми постійно вдосконалюємось і оновлюємось. Виклики стають джерелом нових рішень, а фокус — на важливих змінах. Ми ділимось досвідом, навчаємось одне в одного й допомагаємо іншим зростати.
+															</p>
+														</div>
+														<p class="admin-review-card__company">Компанія: Адвокатські партнери</p>
+													</article>
+												</div>
+												<div class="swiper-slide">
+													<article class="admin-review-card" data-review-id="admin-auth-review-02">
+														<div class="admin-review-card__header">
+															<figure class="admin-review-card__avatar">
+																<picture>
+																	<source media="(max-width: 768px)" srcset="./assets/img/blog/cta/01-768.webp" type="image/webp">
+																	<source media="(max-width: 1280px)" srcset="./assets/img/blog/cta/01-1280.webp" type="image/webp">
+																	<img alt="Олександр Гринь" width="64" height="64" loading="lazy" decoding="async" src="./assets/img/blog/cta/01.webp">
+																</picture>
+															</figure>
+															<div class="admin-review-card__meta">
+																<h3 class="admin-review-card__name h6">Олександр Гринь</h3>
+																<p class="admin-review-card__position">Юрист</p>
+															</div>
+														</div>
+														<div class="admin-review-card__body">
+															<p>
+																ActiveLex допомагає систематизувати практику, швидко знаходити норми та зберігати важливі робочі напрацювання. Це справді економить час щодня.
+															</p>
+														</div>
+														<p class="admin-review-card__company">Компанія: Укрпошта</p>
+													</article>
+												</div>
+												<div class="swiper-slide">
+													<article class="admin-review-card" data-review-id="admin-auth-review-03">
+														<div class="admin-review-card__header">
+															<figure class="admin-review-card__avatar">
+																<picture>
+																	<source media="(max-width: 768px)" srcset="./assets/img/blog/cta/03-768.webp" type="image/webp">
+																	<source media="(max-width: 1280px)" srcset="./assets/img/blog/cta/03-1280.webp" type="image/webp">
+																	<img alt="Сергій Дрозд" width="64" height="64" loading="lazy" decoding="async" src="./assets/img/blog/cta/03.webp">
+																</picture>
+															</figure>
+															<div class="admin-review-card__meta">
+																<h3 class="admin-review-card__name h6">Сергій Дрозд</h3>
+																<p class="admin-review-card__position">Військовий юрист</p>
+															</div>
+														</div>
+														<div class="admin-review-card__body">
+															<p>
+																Зручний інтерфейс і структурований контент дозволяють швидко переходити від пошуку інформації до підготовки конкретних рішень для клієнтів.
+															</p>
+														</div>
+														<p class="admin-review-card__company">Компанія: Nemesis</p>
+													</article>
+												</div>
+												<div class="swiper-slide">
+													<article class="admin-review-card" data-review-id="admin-auth-review-04">
+														<div class="admin-review-card__header">
+															<figure class="admin-review-card__avatar">
+																<picture>
+																	<source media="(max-width: 768px)" srcset="./assets/img/blog/cta/02-768.webp" type="image/webp">
+																	<source media="(max-width: 1280px)" srcset="./assets/img/blog/cta/02-1280.webp" type="image/webp">
+																	<img alt="Марія Коваленко" width="64" height="64" loading="lazy" decoding="async" src="./assets/img/blog/cta/02.webp">
+																</picture>
+															</figure>
+															<div class="admin-review-card__meta">
+																<h3 class="admin-review-card__name h6">Марія Коваленко</h3>
+																<p class="admin-review-card__position">Адвокат</p>
+															</div>
+														</div>
+														<div class="admin-review-card__body">
+															<p>
+																Ми постійно вдосконалюємось і оновлюємось. Виклики стають джерелом нових рішень, а фокус — на важливих змінах. Ми ділимось досвідом, навчаємось одне в одного й допомагаємо іншим зростати.
+															</p>
+														</div>
+														<p class="admin-review-card__company">Компанія: Адвокатські партнери</p>
+													</article>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="admin-auth-reviews__footer">
+										<div class="slider-nav slider-nav--centered slider-nav--blue">
+											<button class="slider-nav__btn" id="swiperAdminAuthReviewsPrev">
+												<i class="icon-chevron-left" aria-hidden="true"></i>
+											</button>
+											<div class="slider-nav__pagination" id="swiperAdminAuthReviewsPagination"></div>
+											<button class="slider-nav__btn" id="swiperAdminAuthReviewsNext">
+												<i class="icon-chevron-right" aria-hidden="true"></i>
+											</button>
+										</div>
+									</div>
+								</div>
+								<div class="admin-auth-reviews__actions">
+									<button type="button" class="btn" data-size="sm" data-variant="primary" data-auth-layout-state="login">
+										<span>Увійти</span>
+									</button>
+									<button type="button" class="btn" data-size="sm" data-variant="gray" data-auth-layout-state="register">
+										<span>Зареєструватися</span>
+									</button>
+								</div>
+							</div>
+						</section>
+					</aside>
+				</div>
+			</main>
+		</div>
+		<script>
+      // ============== MAPS ============== //
+      var maps = [{
+        id: '01',
+        mapEl: '#contact-map',
+        apiKey: 'AIzaSyAgUTZ--Wn2PRezwPDof6TdZpL0oL6FnR8',
+        center: {
+          lat: 50.483425,
+          lng: 29.8756265
+        },
+        options: {
+          zoom: 10,
+          styles: [{
+              featureType: 'administrative',
+              elementType: 'labels.text.fill',
+              stylers: [{
+                color: '#444444',
+              }, ],
+            },
+            {
+              featureType: 'landscape',
+              elementType: 'all',
+              stylers: [{
+                color: '#f4f6f8',
+              }, ],
+            },
+            {
+              featureType: 'poi',
+              elementType: 'all',
+              stylers: [{
+                visibility: 'off',
+              }, ],
+            },
+            {
+              featureType: 'road',
+              elementType: 'all',
+              stylers: [{
+                  saturation: -100,
+                },
+                {
+                  lightness: 45,
+                },
+              ],
+            },
+            {
+              featureType: 'road.highway',
+              elementType: 'all',
+              stylers: [{
+                visibility: 'simplified',
+              }, ],
+            },
+            {
+              featureType: 'road.arterial',
+              elementType: 'labels.icon',
+              stylers: [{
+                visibility: 'off',
+              }, ],
+            },
+            {
+              featureType: 'transit',
+              elementType: 'all',
+              stylers: [{
+                visibility: 'off',
+              }, ],
+            },
+            {
+              featureType: 'water',
+              elementType: 'all',
+              stylers: [{
+                  color: '#d1e7f2',
+                },
+                {
+                  visibility: 'on',
+                },
+              ],
+            },
+          ],
+        },
+        markers: [{
+          position: {
+            lat: 50.483425,
+            lng: 29.8756265
+          },
+          icon: {
+            url: '../../assets/img/icons/map-marker.svg',
+            scaledSize: {
+              width: 40,
+              height: 58,
+            },
+          },
+        }, ],
+      }, ];
+
+      window.maps = maps;
+		</script>
+	</body>
+</html>

@@ -1,0 +1,657 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+		<link rel="shortcut icon" href="./assets/favicon/favicon.ico">
+		<title>Sitemap</title>
+		<script type="module" crossorigin="" src="./js/vendor.min.js?v=1772881746717"></script>
+		<script type="module" crossorigin="" src="./js/app.min.js?v=1772881746717"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/style.min.css?v=1772881746717">
+	</head>
+	<body>
+		<div class="wrapper">
+			<main role="main">
+				<section class="section">
+					<div class="section__container container">
+						<div class="section__wrap">
+							<div class="section__header">
+								<h2 class="section-title">Pages</h2>
+							</div>
+							<div class="section__body">
+								<ol class="pages-list"></ol>
+							</div>
+							<div class="section__header">
+								<h2 class="section-title">Modals</h2>
+							</div>
+							<div class="section__body">
+								<ol class="modals-list pages-list"></ol>
+							</div>
+							<div class="section__header">
+								<h2 class="section-title">Admin Modals</h2>
+							</div>
+							<div class="section__body">
+								<ol class="admin-modals-list pages-list"></ol>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+		</div>
+		<div class="modal" hidden data-modal="">
+			<div class="modal__backdrop" aria-hidden="true"></div>
+			<!-- Custom Order -->
+			<div class="modal__container" role="dialog" aria-modal="true" data-modal-container="modalCustomOrder" data-close-on-esc="true" data-close-on-backdrop="true" data-trap-focus="true" data-return-focus="false" data-animation="modal-fadeInUp" data-speed="300" data-size="xs">
+				<button type="button" class="modal__close-btn" aria-label="Close Modal" data-modal-close="">
+					<i class="icon-x" aria-hidden="true"></i>
+				</button>
+				<div class="modal__content modal-content">
+					<div class="modal-content__header">
+						<h3 class="modal-content__title">Обговорити індивідуальне замовлення</h3>
+					</div>
+					<div class="modal-content__body">
+						<div class="modal-content__desc-text desc-text">
+							<p>
+								Заповніть форму, щоб отримати персональну пропозицію для вашої
+            організації. Індивідуальні умови діють для замовлень від 10
+            ліцензій.
+							</p>
+						</div>
+						<form action="#" method="post" class="modal-content-form">
+							<div class="modal-content-form__groups">
+								<div class="modal-content-form__group">
+									<label class="modal-content-form__label" for="modalContentFormName">Імʼя</label>
+									<label class="input" data-size="sm" for="modalContentFormName">
+										<input type="text" id="modalContentFormName" name="name" placeholder="Імʼя" autocomplete="name">
+									</label>
+								</div>
+								<div class="modal-content-form__grid">
+									<div class="modal-content-form__group">
+										<label class="modal-content-form__label" for="modalContentFormPhone">Телефон</label>
+										<label class="input" data-size="sm" for="modalContentFormPhone">
+											<input type="tel" id="modalContentFormPhone" name="phone" placeholder="Телефон" autocomplete="tel">
+										</label>
+									</div>
+									<div class="modal-content-form__group">
+										<label class="modal-content-form__label" for="modalContentFormEmail">Email</label>
+										<label class="input" data-size="sm" for="modalContentFormEmail">
+											<input type="email" id="modalContentFormEmail" name="email" placeholder="Email" autocomplete="email">
+										</label>
+									</div>
+								</div>
+								<div class="modal-content-form__group">
+									<label class="modal-content-form__label" for="modalContentFormPosition">Посада</label>
+									<label class="input" data-size="sm" for="modalContentFormPosition">
+										<input type="text" id="modalContentFormPosition" name="position" placeholder="Посада" autocomplete="organization-title">
+									</label>
+								</div>
+							</div>
+							<label class="modal-content-form__agree checkbox checkbox--sm">
+								<input type="checkbox" name="agreement">
+								<span class="checkbox__mark" aria-hidden="true"></span>
+								<span class="checkbox__text">Ознайомився(-лася) та приймаю умови публічного договору.</span>
+							</label>
+							<button type="submit" class="modal-content-form__submit btn">
+								<span>Замовити дзвінок</span>
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+			<!-- Purchase Success -->
+			<div class="modal__container" role="dialog" aria-modal="true" data-modal-container="modalPurchaseSuccess" data-close-on-esc="true" data-close-on-backdrop="true" data-trap-focus="true" data-return-focus="false" data-animation="modal-fadeInUp" data-speed="300" data-size="xs">
+				<button type="button" class="modal__close-btn" aria-label="Close Modal" data-modal-close="">
+					<i class="icon-x" aria-hidden="true"></i>
+				</button>
+				<div class="modal__content modal-content">
+					<div class="modal-content__header">
+						<h3 class="modal-content__title">Покупку успішно оформлено!</h3>
+					</div>
+					<div class="modal-content__body">
+						<div class="modal-content__desc-text desc-text">
+							<p>
+								Вітаємо! Ваше замовлення прийнято та обробляється. Деталі й код(и)
+            доступу вже надіслані на вашу електронну пошту, а також доступні у
+            розділі «Мої покупки» в особистому кабінеті.
+							</p>
+						</div>
+					</div>
+					<div class="modal-content__footer">
+						<div class="modal-content__actions">
+							<a href="/" class="btn" data-variant="gray" data-size="sm">
+								<span>На головну</span>
+							</a>
+							<a href="/admin-products.html" class="btn" data-variant="primary" data-size="sm">
+								<span>Увійти в кабінет</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Demo Order -->
+			<div class="modal__container" role="dialog" aria-modal="true" data-modal-container="modalDemoOrder" data-close-on-esc="true" data-close-on-backdrop="true" data-trap-focus="true" data-return-focus="false" data-animation="modal-fadeInUp" data-speed="300" data-size="xs">
+				<button type="button" class="modal__close-btn" aria-label="Close Modal" data-modal-close="">
+					<i class="icon-x" aria-hidden="true"></i>
+				</button>
+				<div class="modal__content modal-content">
+					<div class="modal-content__header">
+						<h3 class="modal-content__title">Замовити демо-доступ</h3>
+					</div>
+					<div class="modal-content__body">
+						<div class="modal-content__desc-text desc-text">
+							<p>
+								Ви отримаєте безкоштовний доступ до продукту LEX.Адвокат на 2 дні.
+            Підтвердіть, щоб активувати демо для вашого акаунта.
+							</p>
+						</div>
+						<form action="#" method="post" class="modal-content-form">
+							<div class="modal-content-form__groups">
+								<div class="modal-content-form__group">
+									<label class="modal-content-form__label" for="modalDemoFormName">Імʼя</label>
+									<label class="input" data-size="sm" for="modalDemoFormName">
+										<input type="text" id="modalDemoFormName" name="name" placeholder="Імʼя" autocomplete="name">
+									</label>
+								</div>
+								<div class="modal-content-form__grid">
+									<div class="modal-content-form__group">
+										<label class="modal-content-form__label" for="modalDemoFormPhone">Телефон</label>
+										<label class="input" data-size="sm" for="modalDemoFormPhone">
+											<input type="tel" id="modalDemoFormPhone" name="phone" placeholder="Телефон" autocomplete="tel">
+										</label>
+									</div>
+									<div class="modal-content-form__group">
+										<label class="modal-content-form__label" for="modalDemoFormEmail">Email</label>
+										<label class="input" data-size="sm" for="modalDemoFormEmail">
+											<input type="email" id="modalDemoFormEmail" name="email" placeholder="Email" autocomplete="email">
+										</label>
+									</div>
+								</div>
+								<div class="modal-content-form__group">
+									<label class="modal-content-form__label" for="modalDemoFormPosition">Посада</label>
+									<label class="input" data-size="sm" for="modalDemoFormPosition">
+										<input type="text" id="modalDemoFormPosition" name="position" placeholder="Посада" autocomplete="organization-title">
+									</label>
+								</div>
+							</div>
+							<label class="modal-content-form__agree checkbox checkbox--sm">
+								<input type="checkbox" name="agreement">
+								<span class="checkbox__mark" aria-hidden="true"></span>
+								<span class="checkbox__text">Ознайомився(-лася) та приймаю умови публічного договору.</span>
+							</label>
+							<button type="submit" class="modal-content-form__submit btn">
+								<span>Замовити</span>
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+			<!-- Demo Success -->
+			<div class="modal__container" role="dialog" aria-modal="true" data-modal-container="modalDemoSuccess" data-close-on-esc="true" data-close-on-backdrop="true" data-trap-focus="true" data-return-focus="false" data-animation="modal-fadeInUp" data-speed="300" data-size="xs">
+				<button type="button" class="modal__close-btn" aria-label="Close Modal" data-modal-close="">
+					<i class="icon-x" aria-hidden="true"></i>
+				</button>
+				<div class="modal__content modal-content">
+					<div class="modal-content__header">
+						<h3 class="modal-content__title">Демо-доступ оформлено</h3>
+					</div>
+					<div class="modal-content__body">
+						<div class="modal-content__desc-text desc-text">
+							<p>
+								Ви успішно оформили безкоштовний доступ до продукту LEX.Адвокат на 2
+            дні. Деталі доступу вже надіслані на вашу електронну пошту.
+							</p>
+						</div>
+					</div>
+					<div class="modal-content__footer">
+						<div class="modal-content__actions">
+							<a href="/store.html" class="btn" data-variant="gray" data-size="sm">
+								<span>Дивитися інші продукти</span>
+							</a>
+							<a href="/admin-products.html" class="btn" data-variant="primary" data-size="sm">
+								<span>Увійти в кабінет</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Vacancy Details -->
+			<div class="modal__container" role="dialog" aria-modal="true" data-modal-container="modalVacancyDetails" data-close-on-esc="true" data-close-on-backdrop="true" data-trap-focus="true" data-return-focus="false" data-animation="modal-fadeInUp" data-speed="300" data-size="xs">
+				<button type="button" class="modal__close-btn" aria-label="Close Modal" data-modal-close="">
+					<i class="icon-x" aria-hidden="true"></i>
+				</button>
+				<div class="modal__content modal-content modal-vacancy">
+					<div class="modal-content__header">
+						<h3 class="modal-content__title">Менеджер із продажу</h3>
+					</div>
+					<div class="modal-content__body">
+						<div class="modal-vacancy__scroll">
+							<div class="modal-content__desc-text desc-text">
+								<p>
+									ActiveLex шукає комунікабельного менеджера, який допоможе
+              розвивати клієнтську базу платформи та презентувати її можливості
+              новим користувачам.
+								</p>
+								<p>
+									Робота поєднує спілкування з клієнтами, проведення коротких
+              онлайн-демо, обробку запитів і супровід користувачів на всіх
+              етапах співпраці.
+								</p>
+								<p>
+									Важливо розуміти базові принципи юридичної діяльності, адже наші
+              продукти створені для юристів, нотаріусів і представників бізнесу.
+								</p>
+							</div>
+							<div class="modal-vacancy__group">
+								<h4 class="modal-vacancy__group-title">Про вакансію</h4>
+								<ul class="modal-vacancy__list">
+									<li>Локація: Київ / Віддалено (гібридний формат)</li>
+									<li>Тип зайнятості: Повна зайнятість</li>
+									<li>Графік: Пн-Пт, 09:00-18:00</li>
+									<li>Оплата: Ставка + бонуси за результат</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="modal-content__footer">
+						<button type="button" class="btn w-full" data-variant="primary" data-size="sm">
+							<span>Відгукнутись</span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal" hidden data-modal="">
+			<div class="modal__backdrop" aria-hidden="true"></div>
+			<!-- Demo Access -->
+			<div class="modal__container" role="dialog" aria-modal="true" data-modal-container="modalDemoAccess" data-close-on-esc="true" data-close-on-backdrop="true" data-trap-focus="true" data-return-focus="false" data-animation="modal-fadeInUp" data-speed="300" data-size="xs">
+				<button type="button" class="modal__close-btn" aria-label="Close Modal" data-modal-close="">
+					<i class="icon-x" aria-hidden="true"></i>
+				</button>
+				<div class="modal__content modal-content">
+					<div class="modal-content__header">
+						<h3 class="modal-content__title">Підтвердити демо-доступ</h3>
+					</div>
+					<div class="modal-content__body">
+						<div class="modal-content__desc-text desc-text">
+							<p>
+								Ви отримаєте безкоштовний доступ до продукту LEX.Адвокат на 2 дні.
+            Підтвердіть, щоб активувати демо для вашого акаунта.
+							</p>
+						</div>
+					</div>
+					<div class="modal-content__footer">
+						<div class="modal-content__actions">
+							<button type="button" class="btn" data-variant="gray" data-size="sm">
+								<span>Скасувати</span>
+							</button>
+							<button type="button" class="btn" data-variant="primary" data-size="sm">
+								<span>Активувати демо</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Custom Order -->
+			<div class="modal__container" role="dialog" aria-modal="true" data-modal-container="modalCustomOrder" data-close-on-esc="true" data-close-on-backdrop="true" data-trap-focus="true" data-return-focus="false" data-animation="modal-fadeInUp" data-speed="300" data-size="xs">
+				<button type="button" class="modal__close-btn" aria-label="Close Modal" data-modal-close="">
+					<i class="icon-x" aria-hidden="true"></i>
+				</button>
+				<div class="modal__content modal-content">
+					<div class="modal-content__header">
+						<h3 class="modal-content__title">Обговорити індивідуальне замовлення</h3>
+					</div>
+					<div class="modal-content__body">
+						<div class="modal-content__desc-text desc-text">
+							<p>
+								Заповніть форму, щоб отримати персональну пропозицію для вашої
+            організації. Індивідуальні умови діють для замовлень від 10
+            ліцензій.
+							</p>
+						</div>
+						<form action="#" method="post" class="modal-content-form">
+							<div class="modal-content-form__groups">
+								<div class="modal-content-form__group">
+									<label class="modal-content-form__label" for="modalContentFormName">Імʼя</label>
+									<label class="input" data-size="sm" for="modalContentFormName">
+										<input type="text" id="modalContentFormName" name="name" placeholder="Імʼя" autocomplete="name">
+									</label>
+								</div>
+								<div class="modal-content-form__grid">
+									<div class="modal-content-form__group">
+										<label class="modal-content-form__label" for="modalContentFormPhone">Телефон</label>
+										<label class="input" data-size="sm" for="modalContentFormPhone">
+											<input type="tel" id="modalContentFormPhone" name="phone" placeholder="Телефон" autocomplete="tel">
+										</label>
+									</div>
+									<div class="modal-content-form__group">
+										<label class="modal-content-form__label" for="modalContentFormEmail">Email</label>
+										<label class="input" data-size="sm" for="modalContentFormEmail">
+											<input type="email" id="modalContentFormEmail" name="email" placeholder="Email" autocomplete="email">
+										</label>
+									</div>
+								</div>
+								<div class="modal-content-form__group">
+									<label class="modal-content-form__label" for="modalContentFormPosition">Посада</label>
+									<label class="input" data-size="sm" for="modalContentFormPosition">
+										<input type="text" id="modalContentFormPosition" name="position" placeholder="Посада" autocomplete="organization-title">
+									</label>
+								</div>
+							</div>
+							<label class="modal-content-form__agree checkbox checkbox--sm">
+								<input type="checkbox" name="agreement">
+								<span class="checkbox__mark" aria-hidden="true"></span>
+								<span class="checkbox__text">Ознайомився(-лася) та приймаю умови публічного договору.</span>
+							</label>
+							<button type="submit" class="modal-content-form__submit btn">
+								<span>Замовити дзвінок</span>
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+			<!-- Change Password -->
+			<div class="modal__container" role="dialog" aria-modal="true" data-modal-container="modalChangePassword" data-close-on-esc="true" data-close-on-backdrop="true" data-trap-focus="true" data-return-focus="false" data-animation="modal-fadeInUp" data-speed="300" data-size="xs">
+				<button type="button" class="modal__close-btn" aria-label="Close Modal" data-modal-close="">
+					<i class="icon-x" aria-hidden="true"></i>
+				</button>
+				<div class="modal__content modal-content">
+					<div class="modal-content__header">
+						<h3 class="modal-content__title">Зміна паролю</h3>
+					</div>
+					<div class="modal-content__body">
+						<div class="modal-content__desc-text desc-text">
+							<p>
+								Радимо використовувати надійний пароль, що містить літери, цифри та
+            символи.
+							</p>
+						</div>
+						<form action="#" method="post" class="modal-content-password-form">
+							<div class="modal-content-password-form__field">
+								<label class="modal-content-password-form__label" for="modalCurrentPassword">Актуальний пароль</label>
+								<div class="modal-content-password-form__input-wrap">
+									<label class="input input--pass" for="modalCurrentPassword" data-size="sm">
+										<input type="password" id="modalCurrentPassword" name="currentPassword" placeholder="Актуальний пароль" autocomplete="current-password">
+										<button type="button" aria-label="Показати пароль" class="input__toggle"></button>
+									</label>
+								</div>
+							</div>
+							<div class="modal-content-password-form__field">
+								<label class="modal-content-password-form__label" for="modalNewPassword">Новий пароль</label>
+								<div class="modal-content-password-form__input-wrap">
+									<label class="input input--pass" for="modalNewPassword" data-size="sm">
+										<input type="password" id="modalNewPassword" name="newPassword" placeholder="Новий пароль" autocomplete="new-password">
+										<button type="button" aria-label="Показати пароль" class="input__toggle"></button>
+									</label>
+								</div>
+							</div>
+							<div class="modal-content-password-form__field">
+								<label class="modal-content-password-form__label" for="modalRepeatPassword">Повторіть пароль</label>
+								<div class="modal-content-password-form__input-wrap">
+									<label class="input input--pass" for="modalRepeatPassword" data-size="sm">
+										<input type="password" id="modalRepeatPassword" name="repeatPassword" placeholder="Повторіть пароль" autocomplete="new-password">
+										<button type="button" aria-label="Показати пароль" class="input__toggle"></button>
+									</label>
+								</div>
+							</div>
+							<button type="submit" class="modal-content-password-form__submit btn">
+								<span>Змінити пароль</span>
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+			<!-- Logout Confirm -->
+			<div class="modal__container" role="dialog" aria-modal="true" data-modal-container="modalLogoutConfirm" data-close-on-esc="true" data-close-on-backdrop="true" data-trap-focus="true" data-return-focus="false" data-animation="modal-fadeInUp" data-speed="300" data-size="xs">
+				<button type="button" class="modal__close-btn" aria-label="Close Modal" data-modal-close="">
+					<i class="icon-x" aria-hidden="true"></i>
+				</button>
+				<div class="modal__content modal-content">
+					<div class="modal-content__header">
+						<h3 class="modal-content__title">Вийти з акаунта?</h3>
+					</div>
+					<div class="modal-content__body">
+						<div class="modal-content__desc-text desc-text">
+							<p>Ви дійсно хочете вийти зі свого профілю ActiveLex?</p>
+						</div>
+					</div>
+					<div class="modal-content__footer">
+						<div class="modal-content__actions">
+							<button type="button" class="btn" data-variant="gray" data-size="sm" data-modal-close="">
+								<span>Скасувати</span>
+							</button>
+							<button type="button" class="btn" data-variant="primary" data-size="sm">
+								<span>Вийти</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Email-адреси пакета -->
+			<div class="modal__container" role="dialog" aria-modal="true" data-modal-container="modalPackageEmails" data-close-on-esc="true" data-close-on-backdrop="true" data-trap-focus="true" data-return-focus="false" data-animation="modal-fadeInUp" data-speed="300" data-size="xs">
+				<button type="button" class="modal__close-btn" aria-label="Close Modal" data-modal-close="">
+					<i class="icon-x" aria-hidden="true"></i>
+				</button>
+				<div class="modal__content modal-content">
+					<div class="modal-content__header">
+						<h3 class="modal-content__title">Email-адреси пакета</h3>
+					</div>
+					<div class="modal-content__body">
+						<div class="modal-content__desc-text desc-text">
+							<p>Керуйте списком email-ів, які мають доступ до цього пакета.</p>
+						</div>
+						<div class="modal-content__emails modal-emails">
+							<div class="modal-emails__header">
+								<h4 class="modal-emails__title">Список email-ів</h4>
+							</div>
+							<div class="modal-emails__body">
+								<ul class="modal-emails__list">
+									<li>
+										<span class="modal-emails__name">admin@email.com</span>
+										<button class="modal-emails__edit-btn" aria-label="Edit Email">
+											<i class="icon-edit" aria-hidden="true"></i>
+										</button>
+									</li>
+									<li>
+										<span class="modal-emails__name">admin@email.com</span>
+										<button class="modal-emails__edit-btn" aria-label="Edit Email">
+											<i class="icon-edit" aria-hidden="true"></i>
+										</button>
+									</li>
+									<li>
+										<span class="modal-emails__name">admin@email.com</span>
+										<button class="modal-emails__edit-btn" aria-label="Edit Email">
+											<i class="icon-edit" aria-hidden="true"></i>
+										</button>
+									</li>
+									<li>
+										<div class="modal-emails__input input" data-size="sm">
+											<input type="text" name="someName" id="someNameControl" placeholder="Email" value="admin@email.com">
+										</div>
+									</li>
+									<li>
+										<span class="modal-emails__name text-muted">Email не задано</span>
+										<button class="modal-emails__edit-btn" aria-label="Edit Email">
+											<i class="icon-edit" aria-hidden="true"></i>
+										</button>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="modal-content__footer">
+						<div class="modal-content__actions">
+							<button type="button" class="btn" data-variant="gray" data-modal-close="">
+								<span>Скасувати</span>
+							</button>
+							<button type="button" class="btn" data-variant="primary">
+								<span>Зберегти зміни</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="product-info-popup" data-popup="productInfo">
+			<div class="product-info-popup__backdrop" data-popup-close=""></div>
+			<div class="product-info-popup__content product-info-content">
+				<div class="product-info-content__header">
+					<h3 class="product-info-content__title">Інформація про покупку</h3>
+					<button type="button" aria-label="Close Popup" class="product-info-content__close-btn" data-popup-close="">
+						<i class="icon-x" aria-hidden="true"></i>
+					</button>
+				</div>
+				<div class="product-info-content__body">
+					<div class="product-info-content__scroll-container">
+						<div class="product-info-content__body-inner">
+							<div class="product-info-content__group">
+								<h4 class="product-info-content__group-title">Загальна інформація</h4>
+								<ul class="product-info-content__group-list">
+									<li>
+										<span>Продукт:</span>
+										<strong>Професіонал</strong>
+									</li>
+									<li>
+										<span>Строк придбання:</span>
+										<strong>6 місяців</strong>
+									</li>
+									<li>
+										<span>Кількість ліцензій:</span>
+										<strong>5 од.</strong>
+									</li>
+									<li>
+										<span>Власник ліцензії:</span>
+										<strong>admin@email.com</strong>
+									</li>
+									<li>
+										<span>Тип:</span>
+										<strong>Підписка</strong>
+									</li>
+									<li>
+										<span>Статус підписки:</span>
+										<strong>Активна</strong>
+									</li>
+									<li>
+										<span>Дата покупки:</span>
+										<strong>12.11.2025</strong>
+									</li>
+									<li>
+										<span>Дата наступного списання:</span>
+										<strong>12.05.2026</strong>
+									</li>
+									<li>
+										<span>Автопродовження:</span>
+										<label class="switch">
+											<input type="checkbox" checked>
+											<span class="switch__slider" aria-hidden="true"></span>
+										</label>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="product-info-content__footer">
+					<button type="button" class="product-info-content__btn btn" data-size="sm">
+						<span>Продовжити</span>
+					</button>
+				</div>
+			</div>
+		</div>
+		<script>
+      // ============== MAPS ============== //
+      var maps = [{
+        id: '01',
+        mapEl: '#contact-map',
+        apiKey: 'AIzaSyAgUTZ--Wn2PRezwPDof6TdZpL0oL6FnR8',
+        center: {
+          lat: 50.483425,
+          lng: 29.8756265
+        },
+        options: {
+          zoom: 10,
+          styles: [{
+              featureType: 'administrative',
+              elementType: 'labels.text.fill',
+              stylers: [{
+                color: '#444444',
+              }, ],
+            },
+            {
+              featureType: 'landscape',
+              elementType: 'all',
+              stylers: [{
+                color: '#f4f6f8',
+              }, ],
+            },
+            {
+              featureType: 'poi',
+              elementType: 'all',
+              stylers: [{
+                visibility: 'off',
+              }, ],
+            },
+            {
+              featureType: 'road',
+              elementType: 'all',
+              stylers: [{
+                  saturation: -100,
+                },
+                {
+                  lightness: 45,
+                },
+              ],
+            },
+            {
+              featureType: 'road.highway',
+              elementType: 'all',
+              stylers: [{
+                visibility: 'simplified',
+              }, ],
+            },
+            {
+              featureType: 'road.arterial',
+              elementType: 'labels.icon',
+              stylers: [{
+                visibility: 'off',
+              }, ],
+            },
+            {
+              featureType: 'transit',
+              elementType: 'all',
+              stylers: [{
+                visibility: 'off',
+              }, ],
+            },
+            {
+              featureType: 'water',
+              elementType: 'all',
+              stylers: [{
+                  color: '#d1e7f2',
+                },
+                {
+                  visibility: 'on',
+                },
+              ],
+            },
+          ],
+        },
+        markers: [{
+          position: {
+            lat: 50.483425,
+            lng: 29.8756265
+          },
+          icon: {
+            url: '../../assets/img/icons/map-marker.svg',
+            scaledSize: {
+              width: 40,
+              height: 58,
+            },
+          },
+        }, ],
+      }, ];
+
+      window.maps = maps;
+		</script>
+	</body>
+</html>
