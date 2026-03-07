@@ -307,123 +307,122 @@ function initHeader(options = {}) {
   setHeaderHeight(header.offsetHeight);
 }
 const STATUSES = {
-  IN_PROGRESS: "in progress",
   DONE: "done"
 };
 const PAGES = [
   {
     title: "Home",
-    href: "/",
-    status: STATUSES.IN_PROGRESS
+    href: "/active-lx/",
+    status: STATUSES.DONE
   },
   {
     title: "Company",
-    href: "/company.html",
+    href: "/active-lx/company.html",
     status: STATUSES.DONE
   },
   {
     title: "Store",
-    href: "/store.html",
+    href: "/active-lx/store.html",
     status: STATUSES.DONE
   },
   {
     title: "Store Inner",
-    href: "/store-inner.html",
+    href: "/active-lx/store-inner.html",
     status: STATUSES.DONE
   },
   {
     title: "Blog",
-    href: "/blog.html",
+    href: "/active-lx/blog.html",
     status: STATUSES.DONE
   },
   {
     title: "Blog Inner",
-    href: "/blog-inner.html",
+    href: "/active-lx/blog-inner.html",
     status: STATUSES.DONE
   },
   {
     title: "News",
-    href: "/news.html",
+    href: "/active-lx/news.html",
     status: STATUSES.DONE
   },
   {
     title: "News Inner",
-    href: "/news-inner.html",
+    href: "/active-lx/news-inner.html",
     status: STATUSES.DONE
   },
   {
     title: "Events",
-    href: "/events.html",
+    href: "/active-lx/events.html",
     status: STATUSES.DONE
   },
   {
     title: "Events Inner",
-    href: "/events-inner.html",
+    href: "/active-lx/events-inner.html",
     status: STATUSES.DONE
   },
   {
     title: "Contacts",
-    href: "/contacts.html",
+    href: "/active-lx/contacts.html",
     status: STATUSES.DONE
   },
   {
     title: "Vacancies",
-    href: "/vacancies.html",
+    href: "/active-lx/vacancies.html",
     status: STATUSES.DONE
   },
   {
     title: "Error",
-    href: "/error.html",
+    href: "/active-lx/error.html",
     status: STATUSES.DONE
   },
   {
     title: "Admin Products",
-    href: "/admin-products.html",
+    href: "/active-lx/admin-products.html",
     status: STATUSES.DONE
   },
   {
     title: "Admin Product Inner",
-    href: "/admin-products-inner.html",
+    href: "/active-lx/admin-products-inner.html",
     status: STATUSES.DONE
   },
   {
     title: "Admin Subscriptions",
-    href: "/admin-subscriptions.html",
+    href: "/active-lx/admin-subscriptions.html",
     status: STATUSES.DONE
   },
   {
     title: "Admin Payments",
-    href: "/admin-payments.html",
+    href: "/active-lx/admin-payments.html",
     status: STATUSES.DONE
   },
   {
     title: "Admin Settings",
-    href: "/admin-settings.html",
+    href: "/active-lx/admin-settings.html",
     status: STATUSES.DONE
   },
   {
     title: "Admin Login",
-    href: "/admin-login.html",
+    href: "/active-lx/admin-login.html",
     status: STATUSES.DONE
   },
   {
     title: "Admin Register",
-    href: "/admin-register.html",
+    href: "/active-lx/admin-register.html",
     status: STATUSES.DONE
   },
   {
     title: "Admin Register Create",
-    href: "/admin-register-create.html",
+    href: "/active-lx/admin-register-create.html",
     status: STATUSES.DONE
   },
   {
     title: "Admin Register Confirm",
-    href: "/admin-register-confirm.html",
+    href: "/active-lx/admin-register-confirm.html",
     status: STATUSES.DONE
   },
   {
     title: "Admin Password New",
-    href: "/admin-password-new.html",
+    href: "/active-lx/admin-password-new.html",
     status: STATUSES.DONE
   }
 ];
