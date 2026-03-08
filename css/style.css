@@ -8456,6 +8456,7 @@ button.btn {
   font-weight: 500;
   line-height: 1;
   white-space: nowrap;
+  color: inherit;
   transition: background-color var(--transition-duration), color var(--transition-duration);
 }
 .admin-ct__tabs > li > button[aria-selected=true] {
