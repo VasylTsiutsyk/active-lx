@@ -4326,6 +4326,7 @@ body:has(.preloader) {
   line-height: var(--body-line-height);
   white-space: nowrap;
   text-align: center;
+  color: inherit;
   transition: background-color var(--transition-duration), color var(--transition-duration);
 }
 @media (max-width: 47rem) {
@@ -10950,6 +10951,7 @@ button.btn {
   inline-size: var(--btn-size);
   block-size: var(--btn-size);
   background: none;
+  color: inherit;
 }
 .product-info-content__close-btn:not(:disabled) {
   cursor: pointer;
