@@ -715,8 +715,8 @@ function initSliders() {
     slidesPerView: 1,
     spaceBetween: 12,
     navigation: {
-      nextEl: "#swiperProductsPrev",
-      prevEl: "#swiperProductsNext"
+      prevEl: "#swiperProductsPrev",
+      nextEl: "#swiperProductsNext"
     },
     pagination: {
       el: "#swiperProductsPagination",
