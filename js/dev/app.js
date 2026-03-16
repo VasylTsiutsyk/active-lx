@@ -316,6 +316,11 @@ const PAGES = [
     status: STATUSES.DONE
   },
   {
+    title: "Home",
+    href: "/active-lx/index-signed.html",
+    status: STATUSES.DONE
+  },
+  {
     title: "Company",
     href: "/active-lx/company.html",
     status: STATUSES.DONE

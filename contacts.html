@@ -8,9 +8,9 @@
 		<meta name="keywords" content="ActiveLex Contacts">
 		<meta name="description" content="Контакти ActiveLex">
 		<title>Contacts | ActiveLex</title>
-		<script type="module" crossorigin="" src="./js/vendor.min.js?v=1773159751223"></script>
-		<script type="module" crossorigin="" src="./js/app.min.js?v=1773159751223"></script>
-		<link rel="stylesheet" crossorigin="" href="./css/style.min.css?v=1773159751223">
+		<script type="module" crossorigin="" src="./js/vendor.min.js?v=1773662630958"></script>
+		<script type="module" crossorigin="" src="./js/app.min.js?v=1773662630958"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/style.min.css?v=1773662630958">
 	</head>
 	<body>
 		<div class="wrapper">
@@ -60,7 +60,7 @@
 								</nav>
 							</div>
 							<div class="header__btn-box">
-								<div class="header__store header-store" data-da="#mobileMenuExtra, 768, 1">
+								<div class="header__store header-store" data-da="#mobileMenuExtra,768,1">
 									<button class="header-store__btn" data-popup-trigger="headerStore">
 										<i class="icon-shop" aria-hidden="true"></i>
 										<span>Магазин LEX</span>
@@ -94,7 +94,8 @@
 								</div>
 								<div class="header__phone header-phone" data-da="#mobilePhoneWrap,992,1">
 									<button class="header-phone__btn" data-popup-trigger="headerPhone">
-										<span>+380 (67) 333 9284</span>
+										<span class="header-phone__btn-label">+380 (67) 333 9284</span>
+										<i class="icon-phone" aria-hidden="true"></i>
 										<i class="icon-chevron-down" aria-hidden="true"></i>
 									</button>
 									<div class="header-phone__popup" data-popup="headerPhone">
@@ -118,9 +119,37 @@
 										</div>
 									</div>
 								</div>
-								<a href="/" class="header__notif" aria-label="Notifications">
-									<i class="icon-sms" aria-hidden="true"></i>
-								</a>
+								<div class="header__notif header-notif">
+									<button type="button" class="header-notif__btn" aria-label="Expand Contacts" data-popup-trigger="headerNotif">
+										<i class="icon-sms" aria-hidden="true"></i>
+									</button>
+									<div class="header-notif__popup" data-popup="headerNotif">
+										<ul class="header-notif__list">
+											<li>
+												<a href="http://" target="_blank" rel="noopener noreferrer">
+													<span>Telegram</span>
+													<i class="icon-telegram" aria-hidden="true"></i>
+												</a>
+											</li>
+											<li>
+												<a href="http://" target="_blank" rel="noopener noreferrer">
+													<span>Viber</span>
+													<i class="icon-viber" aria-hidden="true"></i>
+												</a>
+											</li>
+											<li>
+												<a href="mailto:info@activelex.com">
+													<span>info@activelex.com</span>
+												</a>
+											</li>
+											<li>
+												<a href="/">
+													<span>вул. Срібнокільська 1, оф. 269 м. Київ, 02095, Україна</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
 								<a href="/" class="header__login-link" data-da="#mobileMenuExtra, 768, 2">
 									<span>Вхід</span>
 									<i class="icon-login" aria-hidden="true"></i>
@@ -299,6 +328,23 @@
 												<span>Партнерська програма</span>
 												<i class="icon-chevron-right" aria-hidden="true"></i>
 											</a>
+											<div class="footer__lang-select footer-lang-select">
+												<div class="footer-lang-select__row">
+													<div class="footer-lang-select__label">Мова:</div>
+													<ul class="footer-lang-select__list">
+														<li>
+															<button type="button" class="_active">
+																<span>Українська</span>
+															</button>
+														</li>
+														<li>
+															<button type="button">
+																<span>English</span>
+															</button>
+														</li>
+													</ul>
+												</div>
+											</div>
 										</div>
 									</div>
 									<div class="footer-top__col footer-top__col--menu">
