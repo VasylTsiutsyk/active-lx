@@ -4411,12 +4411,7 @@ body:has(.preloader) {
 }
 @media (max-width: 61rem) {
   .admin-auth-layout__right {
-    position: absolute;
-    inset-inline-start: 0;
-    inset-block-start: 0;
-    inline-size: 100%;
-    block-size: 100%;
-    transition: visibility var(--transition-duration), opacity var(--transition-duration);
+    display: none;
   }
 }
 

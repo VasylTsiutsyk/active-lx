@@ -1566,19 +1566,6 @@ function initAdminSidebar() {
     syncState();
   });
 }
-const LAYOUT_SELECTOR = ".admin-auth-layout";
-const ACTION_SELECTOR = "[data-auth-layout-state]";
-function initAdminAuthLayout() {
-  document.addEventListener("click", (e) => {
-    const actionBtn = e.target.closest(ACTION_SELECTOR);
-    if (!actionBtn) return;
-    const state = actionBtn.getAttribute("data-auth-layout-state");
-    if (!state) return;
-    const layout = actionBtn.closest(LAYOUT_SELECTOR);
-    if (!layout) return;
-    layout.setAttribute("data-state", state);
-  });
-}
 const FOCUS_SELECTORS = [
   'a[href]:not([tabindex="-1"])',
   'area[href]:not([tabindex="-1"])',
@@ -1948,7 +1935,6 @@ document.addEventListener("DOMContentLoaded", () => {
   initInputQuantity();
   init();
   initAdminSidebar();
-  initAdminAuthLayout();
   new Modal();
   initPasswordInputs();
   SELECTORS$1.BODY.classList.add(CLASSES$1.LOADED);
